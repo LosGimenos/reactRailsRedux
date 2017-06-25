@@ -5,7 +5,14 @@ export default class App extends Component {
   render() {
     return (
       <div className="wrapper__content">
-        <h1>This is rendering</h1>
+        <div className="search__title">
+          <h1>Search Gems</h1>
+        </div>
+        <div className="search__bar">
+          <input type="text" placeholder="Search" />
+          <div className="search__submit">
+          </div>
+        </div>
       </div>
     );
   }

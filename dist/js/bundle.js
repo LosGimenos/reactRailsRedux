@@ -23393,7 +23393,7 @@ exports = module.exports = __webpack_require__(198)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  border: 1px solid black;\n  background: url(" + __webpack_require__(232) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(233) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  color: #d8d8d8;\n  list-style: none;\n  width: 26%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n\n.wrapper__content {\n  position: relative;\n  height: 99.5vh;\n  left: 35.25%;\n  border: 1px solid #000;\n  width: 64.5%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(232) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(233) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  color: #d8d8d8;\n  font-weight: 100;\n  list-style: none;\n  width: 26%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n\n.wrapper__content {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 99.5vh;\n  left: 35.25%;\n  border: 1px solid #000;\n  width: 64.5%; }\n\n.search__title {\n  width: 75%; }\n  .search__title h1 {\n    margin-left: 8%;\n    font-weight: 100; }\n\n.search__bar {\n  display: flex;\n  justify-content: space-between;\n  width: 75%;\n  height: 10%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f;\n  margin-bottom: 25%; }\n  .search__bar input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 97%;\n    border: none;\n    outline: none; }\n\n.search__submit {\n  background: url(" + __webpack_require__(234) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 30%;\n  width: 5%; }\n", ""]);
 
 // exports
 
@@ -26401,9 +26401,19 @@ var App = function (_Component) {
         "div",
         { className: "wrapper__content" },
         _react2.default.createElement(
-          "h1",
-          null,
-          "This is rendering"
+          "div",
+          { className: "search__title" },
+          _react2.default.createElement(
+            "h1",
+            null,
+            "Search Gems"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "search__bar" },
+          _react2.default.createElement("input", { type: "text", placeholder: "Search" }),
+          _react2.default.createElement("div", { className: "search__submit" })
         )
       );
     }
@@ -26474,6 +26484,12 @@ module.exports = __webpack_require__.p + "5b3a7874ad40b4a0356f1dc14c19eaf2.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9e80995105b64a0d24d75bd9c96e5d03.png";
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f4dade4bee7bdbf77aeac87e09a08cd0.png";
 
 /***/ })
 /******/ ]);
