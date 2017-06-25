@@ -1,7 +1,18 @@
 .wrapper__content {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 99.5vh;
   left: 35.25%;
-  border: 1px solid $black;
+  border: $border;
   width: 64.5%;
+}
+
+.search__title {
+  width: 75%;
+
+  h1 {
+    font-weight: $lightest;
+  }
 }
