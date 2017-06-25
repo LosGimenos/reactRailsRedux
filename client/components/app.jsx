@@ -8,6 +8,11 @@ export default class App extends Component {
         <div className="search__title">
           <h1>Search Gems</h1>
         </div>
+        <div className="search__bar">
+          <input type="text" placeholder="Search" />
+          <div className="search__submit">
+          </div>
+        </div>
       </div>
     );
   }
