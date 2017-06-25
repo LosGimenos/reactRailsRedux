@@ -23393,7 +23393,7 @@ exports = module.exports = __webpack_require__(198)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  display: flex; }\n\n.nav {\n  height: 100vh;\n  border: 1px solid black;\n  background: url(" + __webpack_require__(232) + "); }\n\n.wrapper__content {\n  border: 1px solid #000; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  border: 1px solid black;\n  background: url(" + __webpack_require__(232) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(233) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  color: #d8d8d8;\n  list-style: none;\n  width: 26%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n\n.wrapper__content {\n  position: relative;\n  height: 99.5vh;\n  left: 35.25%;\n  border: 1px solid #000;\n  width: 64.5%; }\n", ""]);
 
 // exports
 
@@ -26435,10 +26435,28 @@ var Nav = function Nav() {
   return _react2.default.createElement(
     "div",
     { className: "nav" },
+    _react2.default.createElement("div", { className: "nav__logo" }),
     _react2.default.createElement(
-      "h1",
-      null,
-      "Nav bar"
+      "ul",
+      { className: "nav__ul" },
+      _react2.default.createElement(
+        "li",
+        { className: "nav__li" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Search"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        { className: "nav__li" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Favorites"
+        )
+      )
     )
   );
 };
@@ -26450,6 +26468,12 @@ exports.default = Nav;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "5b3a7874ad40b4a0356f1dc14c19eaf2.png";
+
+/***/ }),
+/* 233 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9e80995105b64a0d24d75bd9c96e5d03.png";
 
 /***/ })
 /******/ ]);
