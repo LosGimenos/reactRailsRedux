@@ -26517,6 +26517,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
@@ -26531,57 +26533,75 @@ var _gemName2 = _interopRequireDefault(_gemName);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var propTypes = {
   name: _propTypes2.default.string,
   dependencies: _propTypes2.default.string,
   info: _propTypes2.default.string
 };
 
-var SearchDetailsItem = function SearchDetailsItem(_ref) {
-  var name = _ref.name,
-      dependencies = _ref.dependencies,
-      info = _ref.info;
+var SearchDetailsItem = function (_Component) {
+  _inherits(SearchDetailsItem, _Component);
 
-  return _react2.default.createElement(
-    'div',
-    { className: 'search__details' },
-    _react2.default.createElement(_gemName2.default, {
-      name: name
-    }),
-    _react2.default.createElement(
-      'div',
-      { className: 'details__info' },
-      _react2.default.createElement(
-        'p',
-        { className: 'details__title--color' },
-        'INFORMATION'
-      ),
-      _react2.default.createElement(
-        'p',
-        { className: 'details__copy--color' },
-        info
-      )
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'details__dependencies' },
-      _react2.default.createElement(
-        'p',
-        { className: 'details__title--color' },
-        'DEPENDENCIES'
-      ),
-      _react2.default.createElement(
-        'p',
-        { className: 'details__copy--color' },
-        dependencies
-      )
-    )
-  );
-};
+  function SearchDetailsItem() {
+    _classCallCheck(this, SearchDetailsItem);
 
-SearchDetailsItem.propTypes = propTypes;
+    return _possibleConstructorReturn(this, (SearchDetailsItem.__proto__ || Object.getPrototypeOf(SearchDetailsItem)).call(this));
+  }
+
+  _createClass(SearchDetailsItem, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'search__details' },
+        _react2.default.createElement(_gemName2.default, {
+          name: this.propTypes.name
+        }),
+        _react2.default.createElement(
+          'div',
+          { className: 'details__info' },
+          _react2.default.createElement(
+            'p',
+            { className: 'details__title--color' },
+            'INFORMATION'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'details__copy--color' },
+            this.propTypes.info
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'details__dependencies' },
+          _react2.default.createElement(
+            'p',
+            { className: 'details__title--color' },
+            'DEPENDENCIES'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'details__copy--color' },
+            this.propTypes.dependencies
+          )
+        )
+      );
+    }
+  }]);
+
+  return SearchDetailsItem;
+}(_react.Component);
 
 exports.default = SearchDetailsItem;
+;
+
+SearchDetailsItem.propTypes = propTypes;
 
 /***/ }),
 /* 236 */
@@ -26680,14 +26700,26 @@ var Favorites = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Favorites.__proto__ || Object.getPrototypeOf(Favorites)).call(this));
 
     _this.state = {
-      favoriteGems: []
+      favoriteGems: ["sapphire", "rails", "ruby"]
     };
+    _this.gemNameStyle = "";
+    _this.gemStarStyle = "";
     return _this;
   }
 
   _createClass(Favorites, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var gemList = this.state.favoriteGems.map(function (gem) {
+        return _react2.default.createElement(_gemName2.default, {
+          name: gem,
+          nameStyle: _this2.gemNameStyle,
+          starStyle: _this2.gemStarStyle
+        });
+      });
+
       return _react2.default.createElement(
         'div',
         { className: 'wrapper__content favorites' },
@@ -26695,7 +26727,8 @@ var Favorites = function (_Component) {
           'h1',
           null,
           'Your Favorite Gems'
-        )
+        ),
+        gemList
       );
     }
   }]);
@@ -26728,21 +26761,25 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
-  name: _propTypes2.default.string
+  name: _propTypes2.default.string,
+  nameStyle: _propTypes2.default.string,
+  starStyle: _propTypes2.default.string
 };
 
 var GemName = function GemName(_ref) {
-  var name = _ref.name;
+  var name = _ref.name,
+      nameStyle = _ref.nameStyle,
+      starStyle = _ref.starStyle;
 
   return _react2.default.createElement(
     'div',
-    { className: 'details__name' },
+    { className: nameStyle },
     _react2.default.createElement(
       'p',
       null,
       name
     ),
-    _react2.default.createElement('div', { className: 'details__star' })
+    _react2.default.createElement('div', { className: starStyle })
   );
 };
 
