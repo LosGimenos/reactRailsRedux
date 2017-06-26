@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import GemName from './gemName.jsx';
 
 const propTypes = {
   name: PropTypes.string,
@@ -10,19 +11,17 @@ const propTypes = {
 const SearchDetailsItem = ({ name, dependencies, info }) => {
   return (
     <div className="search__details">
-     <div className="details__name">
-      <p>{ name }</p>
-      <div className="details__star">
+      <GemName
+        name={ name }
+      />
+      <div className="details__info">
+        <p className="details__title--color">INFORMATION</p>
+        <p className="details__copy--color">{ info }</p>
       </div>
-     </div>
-     <div className="details__info">
-      <p className="details__title--color">INFORMATION</p>
-      <p className="details__copy--color">{ info }</p>
-     </div>
-     <div className="details__dependencies">
-      <p className="details__title--color">DEPENDENCIES</p>
-      <p className="details__copy--color">{ dependencies }</p>
-     </div>
+      <div className="details__dependencies">
+        <p className="details__title--color">DEPENDENCIES</p>
+        <p className="details__copy--color">{ dependencies }</p>
+      </div>
     </div>
   );
 };

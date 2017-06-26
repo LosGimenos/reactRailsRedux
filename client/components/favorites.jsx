@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import GemName from './gemName.jsx';
 
 export default class Favorites extends Component {
   constructor() {
     super();
     this.state = {
-      savedGems: []
+      favoriteGems: []
     };
   }
 

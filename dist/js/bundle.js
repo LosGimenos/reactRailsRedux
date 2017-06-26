@@ -26432,7 +26432,7 @@ var App = function (_Component) {
         info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
         dependencies: "None"
       },
-      error: true
+      error: false
     };
 
     _this.issueResultsOrError = _this.issueResultsOrError.bind(_this);
@@ -26525,6 +26525,10 @@ var _propTypes = __webpack_require__(9);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _gemName = __webpack_require__(239);
+
+var _gemName2 = _interopRequireDefault(_gemName);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
@@ -26541,16 +26545,9 @@ var SearchDetailsItem = function SearchDetailsItem(_ref) {
   return _react2.default.createElement(
     'div',
     { className: 'search__details' },
-    _react2.default.createElement(
-      'div',
-      { className: 'details__name' },
-      _react2.default.createElement(
-        'p',
-        null,
-        name
-      ),
-      _react2.default.createElement('div', { className: 'details__star' })
-    ),
+    _react2.default.createElement(_gemName2.default, {
+      name: name
+    }),
     _react2.default.createElement(
       'div',
       { className: 'details__info' },
@@ -26662,6 +26659,10 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _gemName = __webpack_require__(239);
+
+var _gemName2 = _interopRequireDefault(_gemName);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26679,21 +26680,21 @@ var Favorites = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Favorites.__proto__ || Object.getPrototypeOf(Favorites)).call(this));
 
     _this.state = {
-      savedGems: []
+      favoriteGems: []
     };
     return _this;
   }
 
   _createClass(Favorites, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
-        { className: "wrapper__content favorites" },
+        'div',
+        { className: 'wrapper__content favorites' },
         _react2.default.createElement(
-          "h1",
+          'h1',
           null,
-          "Your Favorite Gems"
+          'Your Favorite Gems'
         )
       );
     }
@@ -26703,6 +26704,51 @@ var Favorites = function (_Component) {
 }(_react.Component);
 
 exports.default = Favorites;
+
+/***/ }),
+/* 238 */,
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(9);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var propTypes = {
+  name: _propTypes2.default.string
+};
+
+var GemName = function GemName(_ref) {
+  var name = _ref.name;
+
+  return _react2.default.createElement(
+    'div',
+    { className: 'details__name' },
+    _react2.default.createElement(
+      'p',
+      null,
+      name
+    ),
+    _react2.default.createElement('div', { className: 'details__star' })
+  );
+};
+
+GemName.propTypes = propTypes;
+
+exports.default = GemName;
 
 /***/ })
 /******/ ]);

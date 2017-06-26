@@ -11,7 +11,7 @@ export default class App extends Component {
           info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
           dependencies: "None"
         },
-      error: true
+      error: false
     };
 
     this.issueResultsOrError = this.issueResultsOrError.bind(this);
