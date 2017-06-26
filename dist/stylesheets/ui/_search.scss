@@ -19,7 +19,8 @@
   }
 }
 
-.search__bar {
+.search__bar,
+.search__bar--error {
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -35,6 +36,18 @@
     border: none;
     outline: none;
   }
+}
+
+.search__bar--error {
+  border: 1px solid $lato-red;
+
+  input {
+    color: $lato-red;
+  }
+
+  input::placeholder {
+      color: $lato-red;
+    }
 }
 
 .search__submit {
@@ -99,4 +112,10 @@
   p {
     font-size: 15px;
   }
+}
+
+.search__error {
+  color: $lato-red;
+  font-weight: $lightest;
+  margin-bottom: 30%;
 }

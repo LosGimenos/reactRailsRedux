@@ -11,8 +11,42 @@ export default class App extends Component {
           info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
           dependencies: "None"
         },
-      savedGems: []
+      savedGems: [],
+      error: true
     };
+
+    this.issueResultsOrError = this.issueResultsOrError.bind(this);
+    this.issueSearchBarStyles = this.issueSearchBarStyles.bind(this);
+  }
+
+  errorTest() {
+    return (this.state.error) ? true : false;
+  }
+
+  issueSearchBarStyles() {
+    if (this.errorTest()) {
+      return 'search__bar--error';
+    } else {
+      return 'search__bar';
+    }
+  }
+
+  issueResultsOrError() {
+    if (this.errorTest()) {
+      return (
+        <div className="search__error">
+          <p>Oh no! Looks like that gem can't be found.</p>
+        </div>
+      );
+    } else {
+      return (
+        <SearchDetailsItem
+          name={this.state.gem.name}
+          info={this.state.gem.info}
+          dependencies={this.state.gem.dependencies}
+        />
+      );
+    }
   }
 
   render() {
@@ -21,16 +55,12 @@ export default class App extends Component {
         <div className="search__title">
           <h1>Search Gems</h1>
         </div>
-        <div className="search__bar">
+        <div className={this.issueSearchBarStyles()}>
           <input type="text" placeholder="Search" />
           <div className="search__submit">
           </div>
         </div>
-        <SearchDetailsItem
-          name={this.state.gem.name}
-          info={this.state.gem.info}
-          dependencies={this.state.gem.dependencies}
-        />
+        { this.issueResultsOrError() }
       </div>
     );
   }

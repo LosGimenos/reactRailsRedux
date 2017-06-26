@@ -23393,7 +23393,7 @@ exports = module.exports = __webpack_require__(198)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(232) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(233) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  color: #d8d8d8;\n  font-weight: 100;\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n\n.wrapper__content {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 99.5vh;\n  left: 35.25%;\n  width: 64.5%; }\n\n.search__title {\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 8%;\n    font-weight: 100; }\n\n.search__bar {\n  display: flex;\n  justify-content: space-between;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__submit {\n  background: url(" + __webpack_require__(234) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%; }\n\n.search__details {\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: flex;\n  justify-content: space-between;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  background: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  margin-top: 15%;\n  width: 40%;\n  height: 15px; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  margin-bottom: 5%; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies p {\n  font-size: 15px; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(232) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(233) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  color: #d8d8d8;\n  font-weight: 100;\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n\n.wrapper__content {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 99.5vh;\n  left: 35.25%;\n  width: 64.5%; }\n\n.search__title {\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 8%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  display: flex;\n  justify-content: space-between;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__submit {\n  background: url(" + __webpack_require__(234) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%; }\n\n.search__details {\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: flex;\n  justify-content: space-between;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  background: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  margin-top: 15%;\n  width: 40%;\n  height: 15px; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  margin-bottom: 5%; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies p {\n  font-size: 15px; }\n\n.search__error {\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-bottom: 30%; }\n", ""]);
 
 // exports
 
@@ -26403,12 +26403,51 @@ var App = function (_Component) {
         info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
         dependencies: "None"
       },
-      savedGems: []
+      savedGems: [],
+      error: true
     };
+
+    _this.issueResultsOrError = _this.issueResultsOrError.bind(_this);
+    _this.issueSearchBarStyles = _this.issueSearchBarStyles.bind(_this);
     return _this;
   }
 
   _createClass(App, [{
+    key: 'errorTest',
+    value: function errorTest() {
+      return this.state.error ? true : false;
+    }
+  }, {
+    key: 'issueSearchBarStyles',
+    value: function issueSearchBarStyles() {
+      if (this.errorTest()) {
+        return 'search__bar--error';
+      } else {
+        return 'search__bar';
+      }
+    }
+  }, {
+    key: 'issueResultsOrError',
+    value: function issueResultsOrError() {
+      if (this.errorTest()) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'search__error' },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Oh no! Looks like that gem can\'t be found.'
+          )
+        );
+      } else {
+        return _react2.default.createElement(_searchDetailsItem2.default, {
+          name: this.state.gem.name,
+          info: this.state.gem.info,
+          dependencies: this.state.gem.dependencies
+        });
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -26425,15 +26464,11 @@ var App = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'search__bar' },
+          { className: this.issueSearchBarStyles() },
           _react2.default.createElement('input', { type: 'text', placeholder: 'Search' }),
           _react2.default.createElement('div', { className: 'search__submit' })
         ),
-        _react2.default.createElement(_searchDetailsItem2.default, {
-          name: this.state.gem.name,
-          info: this.state.gem.info,
-          dependencies: this.state.gem.dependencies
-        })
+        this.issueResultsOrError()
       );
     }
   }]);
