@@ -21,8 +21,6 @@
 }
 
 .nav__ul {
-  color: $lato-white;
-  font-weight: $lightest;
   list-style: none;
   width: 26%;
   margin-bottom: 12%;
@@ -34,5 +32,11 @@
 
   li:hover {
     background: rgba(255, 255, 255, .17);
+  }
+
+  a {
+    text-decoration: none;
+    color: $lato-white;
+    font-weight: $lightest;
   }
 }
