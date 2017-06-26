@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import SearchDetailsItem from './searchDetailsItem.jsx';
 
 export default class App extends Component {
   constructor() {
     super();
-    state = {
+    this.state = {
       gem:
         {
           name: "sapphire",
@@ -25,14 +26,11 @@ export default class App extends Component {
           <div className="search__submit">
           </div>
         </div>
-        <div className="search__details">
-          <div className="details__name">
-          </div>
-          <div className="details__info">
-          </div>
-          <div className="details__dependencies">
-          </div>
-        </div>
+        <SearchDetailsItem
+          name={this.state.gem.name}
+          info={this.state.gem.info}
+          dependencies={this.state.gem.dependencies}
+        />
       </div>
     );
   }
