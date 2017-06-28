@@ -1,0 +1,51 @@
+.favorites {
+  position: relative;
+  height: 100vh;
+  left: 35.25%;
+  width: 64.5%;
+  overflow: hidden;
+
+  h1 {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    font-weight: $lightest;
+    width: 50%;
+  }
+}
+
+.favorites__gem-name {
+  position: relative;
+  color: $lato-blue;
+  font-weight: $lightest;
+  width: 50%;
+  padding-left: 10%;
+}
+
+.favorites__star {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background: url($details-star-blue);
+  width: 15px;
+  height: 15px;
+}
+
+.favorites__gem-list {
+  position: relative;
+  top: 35%;
+  height: calc(55px * 6);
+  width: 100%;
+
+  ul {
+    height: 100%;
+    width: 95%;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 33%;
+  }
+
+}

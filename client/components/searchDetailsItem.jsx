@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import GemName from './gemName.jsx';
 
 const propTypes = {
   name: PropTypes.string,
@@ -7,27 +8,33 @@ const propTypes = {
   info: PropTypes.string
 };
 
-const SearchDetailsItem = ({ name, dependencies, info }) => {
-  return (
-    <div className="search__details">
-     <div className="details__name">
-      <p>{ name }</p>
-      <div className="details__star">
+export default class SearchDetailsItem extends Component {
+  constructor() {
+    super();
+    this.gemNameStyle = "details__name";
+    this.gemStarStyle = "details__star";
+  }
+
+  render() {
+    return (
+      <div className="search__details">
+        <GemName
+          name={ this.props.name }
+          nameStyle={ this.gemNameStyle }
+          starStyle={ this.gemStarStyle }
+        />
+        <div className="details__info">
+          <p className="details__title--color">INFORMATION</p>
+          <p className="details__copy--color">{ this.props.info }</p>
+        </div>
+        <div className="details__dependencies">
+          <p className="details__title--color">DEPENDENCIES</p>
+          <p className="details__copy--color">{ this.props.dependencies }</p>
+        </div>
       </div>
-     </div>
-     <div className="details__info">
-      <p className="details__title--color">INFORMATION</p>
-      <p className="details__copy--color">{ info }</p>
-     </div>
-     <div className="details__dependencies">
-      <p className="details__title--color">DEPENDENCIES</p>
-      <p className="details__copy--color">{ dependencies }</p>
-     </div>
-    </div>
-  );
+    );
+  }
 };
 
 
 SearchDetailsItem.propTypes = propTypes;
-
-export default SearchDetailsItem;
