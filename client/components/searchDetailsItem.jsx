@@ -11,21 +11,25 @@ const propTypes = {
 export default class SearchDetailsItem extends Component {
   constructor() {
     super();
+    this.gemNameStyle = "details__name";
+    this.gemStarStyle = "details__star";
   }
 
   render() {
     return (
       <div className="search__details">
         <GemName
-          name={ this.propTypes.name }
+          name={ this.props.name }
+          nameStyle={ this.gemNameStyle }
+          starStyle={ this.gemStarStyle }
         />
         <div className="details__info">
           <p className="details__title--color">INFORMATION</p>
-          <p className="details__copy--color">{ this.propTypes.info }</p>
+          <p className="details__copy--color">{ this.props.info }</p>
         </div>
         <div className="details__dependencies">
           <p className="details__title--color">DEPENDENCIES</p>
-          <p className="details__copy--color">{ this.propTypes.dependencies }</p>
+          <p className="details__copy--color">{ this.props.dependencies }</p>
         </div>
       </div>
     );
