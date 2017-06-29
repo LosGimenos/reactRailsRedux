@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import request from 'superagent';
 import SearchDetailsItem from './searchDetailsItem.jsx';
 
 export default class App extends Component {
@@ -16,6 +17,7 @@ export default class App extends Component {
 
     this.issueResultsOrError = this.issueResultsOrError.bind(this);
     this.issueSearchBarStyles = this.issueSearchBarStyles.bind(this);
+    this.clickHandler = this.clickHandler.bind(this);
   }
 
   errorTest() {
@@ -48,6 +50,14 @@ export default class App extends Component {
     }
   }
 
+  clickHandler() {
+    request
+      .get('http://localhost:3000/api/v1/gems')
+      .then((response) => {
+        console.log(response);
+      })
+  }
+
   render() {
     return (
       <div className="wrapper__content">
@@ -56,7 +66,7 @@ export default class App extends Component {
         </div>
         <div className={this.issueSearchBarStyles()}>
           <input type="text" placeholder="Search" />
-          <div className="search__submit">
+          <div className="search__submit" onClick={ this.clickHandler }>
           </div>
         </div>
         { this.issueResultsOrError() }
