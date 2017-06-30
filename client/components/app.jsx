@@ -3,8 +3,8 @@ import request from 'superagent';
 import SearchDetailsItem from './searchDetailsItem.jsx';
 
 export default class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       gem:
         {
@@ -13,8 +13,9 @@ export default class App extends Component {
           url: "",
           dependencies: ""
         },
-      favorites: [],
-      error: false
+      favorites: this.props.favoriteGems,
+      error: false,
+      searched: false
     };
 
     this.issueResultsOrError = this.issueResultsOrError.bind(this);
@@ -41,15 +42,18 @@ export default class App extends Component {
           <p>Oh no! Looks like that gem can't be found.</p>
         </div>
       );
-    } else {
-      return (
-        <SearchDetailsItem
-          name={this.state.gem.name}
-          info={this.state.gem.info}
-          dependencies={this.state.gem.dependencies}
-        />
-      );
-    }
+    } else if (this.state.searched) {
+        return (
+          <SearchDetailsItem
+            name={this.state.gem.name}
+            info={this.state.gem.info}
+            dependencies={this.state.gem.dependencies}
+            addFavorite={this.props.addFavorites}
+            removeFavorite={this.props.removeFavorites}
+            favoriteGems={this.props.favoriteGems}
+          />
+        );
+      }
   }
 
   clickHandler() {
@@ -81,7 +85,8 @@ export default class App extends Component {
             info: info
 
           },
-          error: false });
+          error: false,
+          searched: true });
       })
       .catch((err) => {
         this.setState({ error: true })

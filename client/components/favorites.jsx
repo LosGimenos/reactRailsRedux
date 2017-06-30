@@ -1,25 +1,51 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import GemName from './gemName.jsx';
 
+const propTypes = {
+  addFavorites: PropTypes.func,
+  favoriteGems: PropTypes.array,
+  removeFavorites: PropTypes.func,
+  matchFavorites: PropTypes.func,
+  favoriteGems: PropTypes.array
+};
+
 export default class Favorites extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      favoriteGems: ["sapphire", "rails", "ruby", "poopy", "loopy", "stoopy", "moopy"]
+      localFavoriteGems: this.props.favoriteGems
     };
     this.gemNameStyle = "favorites__gem-name";
     this.gemStarStyle = "favorites__star";
+    this.gemFavoritedStyle = "favorites__star--favorited";
+
+    this.removeLocalFavorites = this.removeLocalFavorites.bind(this);
+  }
+
+  removeLocalFavorites(gem) {
+    let favoriteGems = this.state.localFavoriteGems.filter((savedGem) => {
+      return savedGem != gem;
+    });
+    this.setState({ localFavoriteGems: favoriteGems });
   }
 
   render() {
 
-    const gemList = this.state.favoriteGems.map(( gem ) => {
+    const gemList = this.state.localFavoriteGems.map(( gem, index ) => {
       return (
-        <li>
+        <li key={index}>
           <GemName
             name={ gem }
             nameStyle={this.gemNameStyle}
             starStyle={this.gemStarStyle}
+            favoritedStyle={this.gemFavoritedStyle}
+            addFavorite={this.props.addFavorites}
+            removeFavorite={this.props.removeFavorites}
+            isFavorited={ true }
+            localFavoriteGems={this.state.localFavoriteGems}
+            removeLocalFavorites={this.removeLocalFavorites}
+            favoriteGems={this.props.favoriteGems}
           />
         </li>
       );
@@ -37,3 +63,5 @@ export default class Favorites extends Component {
     );
   }
 }
+
+Favorites.propTypes = propTypes;

@@ -26,9 +26,21 @@
   position: absolute;
   top: 5%;
   left: 5%;
+  background: url($details-star-gray);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.favorites__star--favorited {
+  position: absolute;
+  top: 5%;
+  left: 5%;
   background: url($details-star-blue);
   width: 15px;
   height: 15px;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .favorites__gem-list {
