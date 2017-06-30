@@ -4,13 +4,33 @@ import App from '../components/app.jsx';
 import Nav from '../components/nav.jsx';
 import Favorites from '../components/favorites.jsx';
 
+let favoriteGems = ['poopy', 'woopy'];
+
+function addFavorites(gem) {
+  favoriteGems.push(gem);
+}
+
+function removeFavorites(gem) {
+  favoriteGems = favoriteGems.filter((savedGem) => {
+    return savedGem != gem;
+  });
+}
+
 const Routes = () => (
   <Router>
     <div>
       <Nav />
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path ="/favorites" component={Favorites} />
+        <Route exact path="/" render={() => (<App
+                                              favoriteGems={favoriteGems}
+                                              addFavorites={addFavorites}
+                                              removeFavorites={removeFavorites}
+                                              />)} />
+        <Route path ="/favorites" render={() => (<Favorites
+                                                    addFavorites={addFavorites}
+                                                    favoriteGems={favoriteGems}
+                                                    removeFavorites={removeFavorites}
+                                                  />)} />
       </Switch>
     </div>
   </Router>

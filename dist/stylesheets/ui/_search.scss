@@ -90,6 +90,16 @@
   margin-top: 15%;
   width: 40%;
   height: 15px;
+  cursor: pointer;
+}
+
+.details__star--favorited {
+  background: url($details-star-blue);
+  background-repeat: no-repeat;
+  margin-top: 15%;
+  width: 40%;
+  height: 15px;
+  cursor: pointer;
 }
 
 .details__title--color {
