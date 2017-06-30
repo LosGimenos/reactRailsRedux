@@ -20,6 +20,11 @@ export default class App extends Component {
     this.issueResultsOrError = this.issueResultsOrError.bind(this);
     this.issueSearchBarStyles = this.issueSearchBarStyles.bind(this);
     this.clickHandler = this.clickHandler.bind(this);
+    this.addFavorite = this.addFavorite.bind(this);
+  }
+
+  addFavorite() {
+
   }
 
   errorTest() {
@@ -47,6 +52,7 @@ export default class App extends Component {
           name={this.state.gem.name}
           info={this.state.gem.info}
           dependencies={this.state.gem.dependencies}
+          addFavorite={}
         />
       );
     }
