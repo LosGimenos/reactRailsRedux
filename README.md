@@ -11,10 +11,10 @@ state-storing behavior occuring in this app.
 ### Instructions
 
 1. From the root directory run 
-    ``` rails server ```
+    ``` $rails server ```
     to get the rails portion started.
 2. After connecting to Rails run 
-    ``` npm run dev ```
+    ``` $npm run dev ```
     to fire up the React portion.
 3. Go crazy-go-nuts.
 
