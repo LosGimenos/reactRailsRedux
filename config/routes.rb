@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  root to: "static_pages#root"
-  get '/favorites' => "static_pages#favorites"
+  namespace :api do
+    namespace :v1 do
+      resources :gems
+    end
+  end
 end
