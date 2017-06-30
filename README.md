@@ -6,22 +6,42 @@ Thanks for issuing this challenge! Was certainly fun to work on.
 I decided to build a separate client in React to connect to Rails. 
 Generally I will opt for separate clients especially relatively 
 light-weight options such as React considering the amount of 
-state-storing behavior occuring in this app   
+state-storing behavior occuring in this app.   
 
 ### Instructions
 
-1. You will need to install Sketch on your computer to view the included design files. You can download a trial version of Sketch at https://www.sketchapp.com
-2. Build the root.html.erb and favorites.html.erb pages to match the designs in the sketch file (located in the designs folder of this repo).
-3. Images used in the sketch files have been included in app/assets/images
-4. Now for the functionality - clicking the magnifying glass on the search bar should search the RubyGems database for the entered text. If there is an exact match then the gem name, its info, and its dependencies should be displayed as shown in the sketch file.
-5. To accomplish the above, have the client send a request to the server (you create the route and method), which in turn should use the RubyGems gem (which has been added to the Gemfile for you, the documentation is here: https://github.com/rubygems/gems) to query the rubygems database and get the required info. Your server method should then return this info to the client.
-6. After a gem has been displayed, clicking the star icon should save that gem to the user's favorites. Use localStorage to accomplish this. A full list of the user's favorites should be displayed at /favorites. Clicking the star icon on that page should remove the gem from the list.
-7. On either page, clicking a gem name should link to that gem's page on rubygems.org (example: https://rubygems.org/gems/foo)
+1. From the root directory run 
+    ``` rails server ```
+    to get the rails portion started.
+2. After connecting to Rails run 
+    ``` npm run dev ```
+    to fire up the React portion.
+3. Go crazy-go-nuts.
 
-### Notes
+### Challenges
 
-1. A working example of this functionality (but with a completely different design) is available at https://stark-ravine-30041.herokuapp.com. Use this only to get a clearer idea of what the assignment is asking. Do not go looking for the code!
+1. Although setting up a more API-like structure for Rails was relatively
+problem free, I experienced an issue from the RubyGems Gem whenever 
+I tried to make a call on a gem that didn't exist. It came back to 
+Rails as a JSON parsing issue. Hit a blocker there so decided to go 
+with the terribly inelegant solution of the client rendering the error
+from any catch in the AJAX request.
 
-2. If you use a JavaScript framework, think about which one would be best for the task. Be prepared to defend your choice.
+2. There was definitely more state here than I initially realized. Next 
+time around I would add the Redux layer if no DB was present.
 
-3. For extra credit, make the pages responsive. There are no designs for this, it's up to you to decide how this should look. Bootstrap has been added to this rails project for you.
+3. Gems appearing in Dependencies do not possess a corresponding link.
+As such they don't populate the Favorites list with a link when saved 
+from Dependencies. This could possibly be solved with moving the ajax 
+call for details directly into the GemName component or making separate 
+calls as the list is being generated.
+
+3. Logic behind which color star is rendering is still flawed. 
+
+4. Not responsive. My first attempts with Flexbox here worked well with 
+static elements. Things got a little jazzy when the elements began to 
+fill with content. 
+
+### Thanks again! Please let me know if you ave any questions.
+
+[Larry Hernandez](http://larryh.win)
