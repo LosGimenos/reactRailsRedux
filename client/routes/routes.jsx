@@ -4,7 +4,7 @@ import App from '../components/app.jsx';
 import Nav from '../components/nav.jsx';
 import Favorites from '../components/favorites.jsx';
 
-let favoriteGems = ['poopy', 'woopy'];
+let favoriteGems = [];
 
 function addFavorites(gem) {
   favoriteGems.push(gem);
