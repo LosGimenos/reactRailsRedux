@@ -25,7 +25,7 @@ export default class Favorites extends Component {
 
   removeLocalFavorites(gem) {
     let favoriteGems = this.state.localFavoriteGems.filter((savedGem) => {
-      return savedGem != gem;
+      return savedGem.name != gem;
     });
     this.setState({ localFavoriteGems: favoriteGems });
   }
@@ -36,7 +36,7 @@ export default class Favorites extends Component {
       return (
         <li key={index}>
           <GemName
-            name={ gem }
+            name={ gem.name }
             nameStyle={this.gemNameStyle}
             starStyle={this.gemStarStyle}
             favoritedStyle={this.gemFavoritedStyle}
@@ -46,6 +46,7 @@ export default class Favorites extends Component {
             localFavoriteGems={this.state.localFavoriteGems}
             removeLocalFavorites={this.removeLocalFavorites}
             favoriteGems={this.props.favoriteGems}
+            projectUri={ gem.uri }
           />
         </li>
       );

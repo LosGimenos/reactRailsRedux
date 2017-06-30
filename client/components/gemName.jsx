@@ -12,7 +12,8 @@ const propTypes = {
   matchFavorites: PropTypes.func,
   isFavorited: PropTypes.bool,
   localFavoriteGems: PropTypes.array,
-  removeLocalFavorites: PropTypes.func
+  removeLocalFavorites: PropTypes.func,
+  projectUri: PropTypes.string
 };
 
 export default class GemName extends Component {
@@ -43,16 +44,40 @@ export default class GemName extends Component {
         this.props.removeFavorite(this.props.name);
         this.setState({ favorited: false })
     } else if (!this.state.favorited) {
-        this.props.addFavorite(this.props.name);
+        this.props.addFavorite(
+          {
+            name: this.props.name,
+            uri: this.props.projectUri
+          }
+        );
         this.setState({ favorited: true })
+    }
+  }
+
+  renderAnchor() {
+    console.log(this.props.projectUri)
+    if (this.props.projectUri) {
+      return (
+        <div>
+          <a href={this.props.projectUri} target="_blank">
+            <p>{ this.props.name }</p>
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <div><p>{ this.props.name }</p></div>
+      );
     }
   }
 
   render() {
     return (
       <div className={ this.props.nameStyle }>
-        <p>{ this.props.name }</p>
-        <div className={ this.toggleStar() } onClick={ this.clickHandler }>
+        { this.renderAnchor() }
+        <div
+          className={ this.toggleStar() }
+          onClick={ this.clickHandler }>
         </div>
       </div>
     );

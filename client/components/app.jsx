@@ -10,8 +10,8 @@ export default class App extends Component {
         {
           name: "",
           info: "",
-          url: "",
-          dependencies: ""
+          uri: "",
+          dependencies: null
         },
       favorites: this.props.favoriteGems,
       error: false,
@@ -51,6 +51,7 @@ export default class App extends Component {
             addFavorite={this.props.addFavorites}
             removeFavorite={this.props.removeFavorites}
             favoriteGems={this.props.favoriteGems}
+            projectUri={this.state.gem.uri}
           />
         );
       }
@@ -69,6 +70,7 @@ export default class App extends Component {
       .then((jsonResponse) => {
         let name = jsonResponse.name;
         let info = jsonResponse.info;
+        let projectUri = jsonResponse.project_uri;
         let dependencies = [];
 
         jsonResponse.dependencies.development.forEach((gem) => {
@@ -77,16 +79,17 @@ export default class App extends Component {
 
         jsonResponse.dependencies.runtime.forEach((gem) => {
           dependencies.push(gem);
-        })
+        });
 
         this.setState({ gem:
           {
             name: name,
-            info: info
-
+            info: info,
+            dependencies: dependencies,
+            uri: projectUri
           },
           error: false,
-          searched: true });
+          searched: true })
       })
       .catch((err) => {
         this.setState({ error: true })
