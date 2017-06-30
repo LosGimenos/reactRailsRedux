@@ -9,6 +9,8 @@ light-weight options such as React considering the amount of
 state-storing behavior occuring in this app.   
 
 ### Instructions
+(Requires Rails and Node. ZIP will include modules. Otherwise 
+'''$Bundle''' and '''$npm install''' as appropriate)
 
 1. From the root directory run 
     ``` $rails server ```
