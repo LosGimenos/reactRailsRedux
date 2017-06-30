@@ -1,12 +1,10 @@
 class Api::V1::GemsController < ApplicationController
 
   def index
-    @gem = { "gems": "these are the gems!!"}
-    render json: @gem
-  end
+    query_name = params[:query]
 
-  def show
-    @gem = {"gems": "these are the gems!!"}
+    @gem = Gems.info "#{query_name}"
+
     render json: @gem
   end
 

@@ -26505,9 +26505,9 @@ var App = function (_Component) {
 
     _this.state = {
       gem: {
-        name: "sapphire",
-        info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
-        dependencies: "None"
+        name: "",
+        info: "",
+        dependencies: ""
       },
       error: false
     };
@@ -26556,8 +26556,34 @@ var App = function (_Component) {
   }, {
     key: 'clickHandler',
     value: function clickHandler() {
-      _superagent2.default.get('http://localhost:3000/api/v1/gems').then(function (response) {
-        console.log(response);
+      var _this2 = this;
+
+      var input = document.querySelector('.search__input');
+      var query = input.value.toLowerCase();
+
+      _superagent2.default.get('http://localhost:3000/api/v1/gems').query({ query: query }).then(function (response) {
+        return JSON.parse(response.text);
+      }).then(function (jsonResponse) {
+        var name = jsonResponse.name;
+        var info = jsonResponse.info;
+        var dependencies = [];
+
+        jsonResponse.dependencies.development.forEach(function (gem) {
+          dependencies.push(gem);
+        });
+
+        jsonResponse.dependencies.runtime.forEach(function (gem) {
+          dependencies.push(gem);
+        });
+
+        _this2.setState({ gem: {
+            name: name,
+            info: info
+
+          },
+          error: false });
+      }).catch(function (err) {
+        _this2.setState({ error: true });
       });
     }
   }, {
@@ -26578,7 +26604,7 @@ var App = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: this.issueSearchBarStyles() },
-          _react2.default.createElement('input', { type: 'text', placeholder: 'Search' }),
+          _react2.default.createElement('input', { className: 'search__input', type: 'text', placeholder: 'Search' }),
           _react2.default.createElement('div', { className: 'search__submit', onClick: this.clickHandler })
         ),
         this.issueResultsOrError()

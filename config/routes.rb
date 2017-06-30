@@ -4,5 +4,4 @@ Rails.application.routes.draw do
       resources :gems
     end
   end
-  # get '/*path' => 'welcome#index'
 end

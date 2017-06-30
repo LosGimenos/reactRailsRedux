@@ -8,10 +8,12 @@ export default class App extends Component {
     this.state = {
       gem:
         {
-          name: "sapphire",
-          info: "An automated web acceptance test framework for non-technical resources using selenium-wedriver.",
-          dependencies: "None"
+          name: "",
+          info: "",
+          url: "",
+          dependencies: ""
         },
+      favorites: [],
       error: false
     };
 
@@ -51,10 +53,38 @@ export default class App extends Component {
   }
 
   clickHandler() {
+    let input = document.querySelector('.search__input');
+    let query = input.value.toLowerCase();
+
     request
       .get('http://localhost:3000/api/v1/gems')
+      .query({ query: query })
       .then((response) => {
-        console.log(response);
+        return JSON.parse(response.text)
+      })
+      .then((jsonResponse) => {
+        let name = jsonResponse.name;
+        let info = jsonResponse.info;
+        let dependencies = [];
+
+        jsonResponse.dependencies.development.forEach((gem) => {
+          dependencies.push(gem);
+        });
+
+        jsonResponse.dependencies.runtime.forEach((gem) => {
+          dependencies.push(gem);
+        })
+
+        this.setState({ gem:
+          {
+            name: name,
+            info: info
+
+          },
+          error: false });
+      })
+      .catch((err) => {
+        this.setState({ error: true })
       })
   }
 
@@ -65,7 +95,7 @@ export default class App extends Component {
           <h1>Search Gems</h1>
         </div>
         <div className={this.issueSearchBarStyles()}>
-          <input type="text" placeholder="Search" />
+          <input className="search__input" type="text" placeholder="Search" />
           <div className="search__submit" onClick={ this.clickHandler }>
           </div>
         </div>
