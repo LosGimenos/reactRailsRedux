@@ -38,7 +38,7 @@ const config = {
     new BrowserSyncPlugin(
       {
         host: 'localhost',
-        port: 3000,
+        port: 3005,
         proxy: 'http://localhost:8080'
       },
       {
