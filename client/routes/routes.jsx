@@ -12,7 +12,7 @@ function addFavorites(gem) {
 
 function removeFavorites(gem) {
   favoriteGems = favoriteGems.filter((savedGem) => {
-    return savedGem != gem;
+    return savedGem.name != gem;
   });
 }
 

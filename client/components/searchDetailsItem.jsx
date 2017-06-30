@@ -4,11 +4,12 @@ import GemName from './gemName.jsx';
 
 const propTypes = {
   name: PropTypes.string,
-  dependencies: PropTypes.string,
+  dependencies: PropTypes.array,
   info: PropTypes.string,
   addFavorite: PropTypes.func,
   removeFavorite: PropTypes.func,
-  favoriteGems: PropTypes.array
+  favoriteGems: PropTypes.array,
+  projectUri: PropTypes.string
 };
 
 export default class SearchDetailsItem extends Component {
@@ -30,6 +31,24 @@ export default class SearchDetailsItem extends Component {
   }
 
   render() {
+    const dependentGems = this.props.dependencies.map((gem, index) => {
+      return (
+        <li key={index}>
+          <GemName
+            key={index}
+            name={ gem.name }
+            nameStyle={ this.gemNameStyle }
+            starStyle={ this.gemStarStyle }
+            favoritedStyle={ this.gemFavoritedStyle }
+            addFavorite={ this.props.addFavorite }
+            removeFavorite={ this.props.removeFavorite }
+            favoriteGems={ this.props.favoriteGems }
+            isFavorited={ this.isFavorited() }
+          />
+        </li>
+      );
+    })
+
     return (
       <div className="search__details">
         <GemName
@@ -41,6 +60,7 @@ export default class SearchDetailsItem extends Component {
           removeFavorite={ this.props.removeFavorite }
           favoriteGems={ this.props.favoriteGems }
           isFavorited={ this.isFavorited() }
+          projectUri={ this.props.projectUri }
         />
         <div className="details__info">
           <p className="details__title--color">INFORMATION</p>
@@ -48,7 +68,9 @@ export default class SearchDetailsItem extends Component {
         </div>
         <div className="details__dependencies">
           <p className="details__title--color">DEPENDENCIES</p>
-          <p className="details__copy--color">{ this.props.dependencies }</p>
+          <ul dependencies__list>
+            {dependentGems}
+          </ul>
         </div>
       </div>
     );

@@ -11352,7 +11352,8 @@ var propTypes = {
   matchFavorites: _propTypes2.default.func,
   isFavorited: _propTypes2.default.bool,
   localFavoriteGems: _propTypes2.default.array,
-  removeLocalFavorites: _propTypes2.default.func
+  removeLocalFavorites: _propTypes2.default.func,
+  projectUri: _propTypes2.default.string
 };
 
 var GemName = function (_Component) {
@@ -11393,8 +11394,41 @@ var GemName = function (_Component) {
         this.props.removeFavorite(this.props.name);
         this.setState({ favorited: false });
       } else if (!this.state.favorited) {
-        this.props.addFavorite(this.props.name);
+        this.props.addFavorite({
+          name: this.props.name,
+          uri: this.props.projectUri
+        });
         this.setState({ favorited: true });
+      }
+    }
+  }, {
+    key: 'renderAnchor',
+    value: function renderAnchor() {
+      console.log(this.props.projectUri);
+      if (this.props.projectUri) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: this.props.projectUri, target: '_blank' },
+            _react2.default.createElement(
+              'p',
+              null,
+              this.props.name
+            )
+          )
+        );
+      } else {
+        return _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'p',
+            null,
+            this.props.name
+          )
+        );
       }
     }
   }, {
@@ -11403,12 +11437,10 @@ var GemName = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: this.props.nameStyle },
-        _react2.default.createElement(
-          'p',
-          null,
-          this.props.name
-        ),
-        _react2.default.createElement('div', { className: this.toggleStar(), onClick: this.clickHandler })
+        this.renderAnchor(),
+        _react2.default.createElement('div', {
+          className: this.toggleStar(),
+          onClick: this.clickHandler })
       );
     }
   }]);
@@ -23592,7 +23624,7 @@ exports = module.exports = __webpack_require__(203)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(204) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(205) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 25%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 25%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__submit {\n  background: url(" + __webpack_require__(206) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 20%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: flex;\n  justify-content: space-between;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  background: url(" + __webpack_require__(93) + ");\n  background-repeat: no-repeat;\n  margin-top: 15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  background: url(" + __webpack_require__(94) + ");\n  background-repeat: no-repeat;\n  margin-top: 15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  margin-bottom: 5%; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies p {\n  font-size: 15px; }\n\n.search__error {\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-bottom: 30%; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 50%;\n  padding-left: 10%; }\n\n.favorites__star {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(93) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__star--favorited {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(94) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer;\n  z-index: 5; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(204) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(205) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 25%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 25%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(206) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 25%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(93) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(94) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  margin-bottom: 4%; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 50%;\n  padding-left: 10%; }\n\n.favorites__star {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(93) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__star--favorited {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(94) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -24190,7 +24222,7 @@ function addFavorites(gem) {
 
 function removeFavorites(gem) {
   favoriteGems = favoriteGems.filter(function (savedGem) {
-    return savedGem != gem;
+    return savedGem.name != gem;
   });
 }
 
@@ -26592,8 +26624,8 @@ var App = function (_Component) {
       gem: {
         name: "",
         info: "",
-        url: "",
-        dependencies: ""
+        uri: "",
+        dependencies: null
       },
       favorites: _this.props.favoriteGems,
       error: false,
@@ -26640,7 +26672,8 @@ var App = function (_Component) {
           dependencies: this.state.gem.dependencies,
           addFavorite: this.props.addFavorites,
           removeFavorite: this.props.removeFavorites,
-          favoriteGems: this.props.favoriteGems
+          favoriteGems: this.props.favoriteGems,
+          projectUri: this.state.gem.uri
         });
       }
     }
@@ -26657,6 +26690,7 @@ var App = function (_Component) {
       }).then(function (jsonResponse) {
         var name = jsonResponse.name;
         var info = jsonResponse.info;
+        var projectUri = jsonResponse.project_uri;
         var dependencies = [];
 
         jsonResponse.dependencies.development.forEach(function (gem) {
@@ -26669,8 +26703,9 @@ var App = function (_Component) {
 
         _this2.setState({ gem: {
             name: name,
-            info: info
-
+            info: info,
+            dependencies: dependencies,
+            uri: projectUri
           },
           error: false,
           searched: true });
@@ -28711,11 +28746,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var propTypes = {
   name: _propTypes2.default.string,
-  dependencies: _propTypes2.default.string,
+  dependencies: _propTypes2.default.array,
   info: _propTypes2.default.string,
   addFavorite: _propTypes2.default.func,
   removeFavorite: _propTypes2.default.func,
-  favoriteGems: _propTypes2.default.array
+  favoriteGems: _propTypes2.default.array,
+  projectUri: _propTypes2.default.string
 };
 
 var SearchDetailsItem = function (_Component) {
@@ -28748,6 +28784,26 @@ var SearchDetailsItem = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      var _this3 = this;
+
+      var dependentGems = this.props.dependencies.map(function (gem, index) {
+        return _react2.default.createElement(
+          'li',
+          { key: index },
+          _react2.default.createElement(_gemName2.default, {
+            key: index,
+            name: gem.name,
+            nameStyle: _this3.gemNameStyle,
+            starStyle: _this3.gemStarStyle,
+            favoritedStyle: _this3.gemFavoritedStyle,
+            addFavorite: _this3.props.addFavorite,
+            removeFavorite: _this3.props.removeFavorite,
+            favoriteGems: _this3.props.favoriteGems,
+            isFavorited: _this3.isFavorited()
+          })
+        );
+      });
+
       return _react2.default.createElement(
         'div',
         { className: 'search__details' },
@@ -28759,7 +28815,8 @@ var SearchDetailsItem = function (_Component) {
           addFavorite: this.props.addFavorite,
           removeFavorite: this.props.removeFavorite,
           favoriteGems: this.props.favoriteGems,
-          isFavorited: this.isFavorited()
+          isFavorited: this.isFavorited(),
+          projectUri: this.props.projectUri
         }),
         _react2.default.createElement(
           'div',
@@ -28784,9 +28841,9 @@ var SearchDetailsItem = function (_Component) {
             'DEPENDENCIES'
           ),
           _react2.default.createElement(
-            'p',
-            { className: 'details__copy--color' },
-            this.props.dependencies
+            'ul',
+            { dependencies__list: true },
+            dependentGems
           )
         )
       );
@@ -28925,7 +28982,7 @@ var Favorites = function (_Component) {
     key: 'removeLocalFavorites',
     value: function removeLocalFavorites(gem) {
       var favoriteGems = this.state.localFavoriteGems.filter(function (savedGem) {
-        return savedGem != gem;
+        return savedGem.name != gem;
       });
       this.setState({ localFavoriteGems: favoriteGems });
     }
@@ -28939,7 +28996,7 @@ var Favorites = function (_Component) {
           'li',
           { key: index },
           _react2.default.createElement(_gemName2.default, {
-            name: gem,
+            name: gem.name,
             nameStyle: _this2.gemNameStyle,
             starStyle: _this2.gemStarStyle,
             favoritedStyle: _this2.gemFavoritedStyle,
@@ -28948,7 +29005,8 @@ var Favorites = function (_Component) {
             isFavorited: true,
             localFavoriteGems: _this2.state.localFavoriteGems,
             removeLocalFavorites: _this2.removeLocalFavorites,
-            favoriteGems: _this2.props.favoriteGems
+            favoriteGems: _this2.props.favoriteGems,
+            projectUri: gem.uri
           })
         );
       });
