@@ -1,6 +1,12 @@
 # Teachable Growth Team Developer Test
+## Larry Hernandez
 
-Thank you for applying to Teachable! Your goal with this test is to build an interface that allows a user to search for ruby gems, and save their favorites.
+Thanks for issuing this challenge! Was certainly fun to work on.
+
+I decided to build a separate client in React to connect to Rails. 
+Generally I will opt for separate clients especially relatively 
+light-weight options such as React considering the amount of 
+state-storing behavior occuring in this app   
 
 ### Instructions
 
