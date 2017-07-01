@@ -14,10 +14,10 @@ as appropriate)
 
 1. From the root directory run 
     ``` $rails server ```
-    to get the rails portion started.
+    to get the rails portion started. Runs on port 3000.
 2. After connecting to Rails run 
     ``` $npm run dev ```
-    to fire up the React portion.
+    to fire up the React portion. Runs on port 8080 but BrowserSync should also fire something on 3005.
 3. Go crazy-go-nuts.
 
 ### Challenges
