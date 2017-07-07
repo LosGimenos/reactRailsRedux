@@ -14,7 +14,9 @@ const defaultState = {
      name: '',
      url: '',
      favorited: false
-   }
+   },
+   error: false,
+   searched: false
 };
 
 const store = createStore(rootReducer, defaultState);
