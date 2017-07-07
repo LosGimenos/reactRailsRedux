@@ -15,7 +15,13 @@ function gems(state={}, action) {
       return {
         name: action.name,
         url: action.url,
-        favorited: false
+        favorited: false,
+        searched: true
+      }
+
+    case "QUERY_GEM":
+      return {
+        name: action.name
       }
 
     default:

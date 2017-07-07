@@ -9,7 +9,10 @@ const config = {
     inline: true,
     port: 8080,
   },
-  entry: path.join(__dirname, 'client', 'index.jsx'),
+  entry: [
+           'babel-polyfill',
+           path.join(__dirname, 'client', 'index.jsx')
+         ],
   output: {
     path: path.join(__dirname, 'dist', 'js'),
     filename: 'bundle.js',

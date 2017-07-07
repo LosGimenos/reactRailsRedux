@@ -4,7 +4,7 @@ import createHistory from 'history/createBrowserHistory';
 import { ConnectedRouter, routerMiddleware, push } from 'react-router-redux';
 import { Provider } from 'react-redux';
 
-import store from '../store';
+import store from '../store.js';
 import App from '../components/app.jsx';
 import Nav from '../components/nav.jsx';
 import Favorites from '../components/favorites.jsx';

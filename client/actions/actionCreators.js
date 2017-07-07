@@ -13,6 +13,13 @@ export function removeFavorite(index) {
   };
 }
 
+export function queryGem(name) {
+  return {
+    type: 'QUERY_GEM',
+    name
+  }
+}
+
 export function addGem(name, url, dependencies) {
   return {
     type: 'ADD_GEM',

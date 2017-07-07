@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/UseFedora/growth-team-developer-test#readme",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "history": "^4.6.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
