@@ -6,7 +6,7 @@ import gems from './gems.js';
 
 const rootReducer= combineReducers({
   favorites,
-  gems
+  gems,
   routing: routerReducer
 });
 
