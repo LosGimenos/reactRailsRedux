@@ -30,16 +30,8 @@ const Routes = () => (
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" render={() => (<App
-                                                favoriteGems={favoriteGems}
-                                                addFavorites={addFavorites}
-                                                removeFavorites={removeFavorites}
-                                                />)} />
-          <Route path ="/favorites" render={() => (<Favorites
-                                                      addFavorites={addFavorites}
-                                                      favoriteGems={favoriteGems}
-                                                      removeFavorites={removeFavorites}
-                                                    />)} />
+          <Route exact path="/" component={App} />
+          <Route path="/favorites" component={Favorites} />
         </Switch>
       </div>
     </ConnectedRouter>
