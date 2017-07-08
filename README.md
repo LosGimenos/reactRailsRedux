@@ -1,6 +1,6 @@
 # React Rails Redux Implementation
 
-Previous challenge applying Redux layer and Saga for asyc. 
+Previous challenge applying Redux layer and Saga for asyc
 
 ### Instructions
 (Requires Rails and Node. ``` $Bundle ``` and ```$npm install``` 
