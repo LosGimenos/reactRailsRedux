@@ -35652,7 +35652,7 @@ exports = module.exports = __webpack_require__(529)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 25%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 25%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 25%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  margin-bottom: 4%; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 50%;\n  padding-left: 10%; }\n\n.favorites__star {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(216) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__star--favorited {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 5%; }\n  .details__name p {\n    font-size: 15px; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 50%;\n  padding-left: 10%; }\n\n.favorites__star {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(216) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__star--favorited {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -36240,17 +36240,17 @@ var _store = __webpack_require__(588);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _app = __webpack_require__(606);
+var _appConnector = __webpack_require__(619);
 
-var _app2 = _interopRequireDefault(_app);
+var _appConnector2 = _interopRequireDefault(_appConnector);
 
 var _nav = __webpack_require__(612);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _favorites = __webpack_require__(613);
+var _favoritesConnector = __webpack_require__(620);
 
-var _favorites2 = _interopRequireDefault(_favorites);
+var _favoritesConnector2 = _interopRequireDefault(_favoritesConnector);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36271,8 +36271,8 @@ var Routes = function Routes() {
         _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _app2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/favorites', component: _favorites2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _appConnector2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/favorites', component: _favoritesConnector2.default })
         )
       )
     )
@@ -39525,7 +39525,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 
 
 Object.defineProperty(exports, "__esModule", {
-   value: true
+  value: true
 });
 
 var _redux = __webpack_require__(151);
@@ -39546,20 +39546,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var sagaMiddleware = (0, _reduxSaga2.default)();
 var defaultState = {
-   // favorites: [],
-   // gems: {
-   //   name: '',
-   //   url: '',
-   //   favorited: false,
-   //   dependencies: []
-   // },
-   // dependency: {
-   //   name: '',
-   //   url: '',
-   //   favorited: false
-   // },
-   // error: false,
-   // searched: false
+  favorites: [],
+  gem: {
+    name: '',
+    url: '',
+    info: '',
+    favorited: false,
+    dependencies: []
+  },
+  dependency: {
+    name: '',
+    url: '',
+    favorited: false
+  },
+  error: false
 };
 
 var store = (0, _redux.createStore)(_index2.default, defaultState, (0, _redux.applyMiddleware)(sagaMiddleware));
@@ -39855,34 +39855,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _marked = [createGemAsync, watchCreateGem, rootSaga].map(regeneratorRuntime.mark);
 
 function createGemAsync(action) {
-  var response;
+  var response, jsonResponse, name, url, info;
   return regeneratorRuntime.wrap(function createGemAsync$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return (0, _effects.call)(_superagent2.default.get, 'http://localhost:3000/api/v1/gems');
+          return (0, _effects.call)(_superagent2.default.get, 'http://localhost:3000/api/v1/gems', { "query": action.name });
 
         case 3:
           response = _context.sent;
+          jsonResponse = JSON.parse(response.text);
+          name = jsonResponse.name;
+          url = jsonResponse.project_uri;
+          info = jsonResponse.info;
 
-          console.log(response);
-          _context.next = 10;
+
+          console.log(info);
+          _context.next = 11;
+          return (0, _effects.put)({ type: "ADD_GEM", name: name, url: url, info: info });
+
+        case 11:
+          _context.next = 18;
           break;
 
-        case 7:
-          _context.prev = 7;
+        case 13:
+          _context.prev = 13;
           _context.t0 = _context['catch'](0);
 
           console.log('Request failed! Check this out: ', _context.t0);
+          _context.next = 18;
+          return (0, _effects.put)({ type: "TOGGLE_ERROR_ON" });
 
-        case 10:
+        case 18:
         case 'end':
           return _context.stop();
       }
     }
-  }, _marked[0], this, [[0, 7]]);
+  }, _marked[0], this, [[0, 13]]);
 }
 
 function watchCreateGem() {
@@ -39890,11 +39901,10 @@ function watchCreateGem() {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          console.log('saga is running');
-          _context2.next = 3;
+          _context2.next = 2;
           return (0, _reduxSaga.takeEvery)("QUERY_GEM", createGemAsync);
 
-        case 3:
+        case 2:
         case 'end':
           return _context2.stop();
       }
@@ -41886,7 +41896,58 @@ module.exports = function shouldRetry(err, res) {
 
 
 /***/ }),
-/* 602 */,
+/* 602 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.addFavorite = addFavorite;
+exports.removeFavorite = removeFavorite;
+exports.queryGem = queryGem;
+exports.addGem = addGem;
+exports.removeGem = removeGem;
+function addFavorite(name, url) {
+  return {
+    type: 'ADD_FAVORITE',
+    name: name,
+    url: url
+  };
+}
+
+function removeFavorite(index) {
+  return {
+    type: 'REMOVE_FAVORITE',
+    index: index
+  };
+}
+
+function queryGem(name) {
+  return {
+    type: 'QUERY_GEM',
+    name: name
+  };
+}
+
+function addGem(name, url, info) {
+  return {
+    type: 'ADD_GEM',
+    name: name,
+    url: url,
+    info: info
+  };
+}
+
+function removeGem() {
+  return {
+    type: 'REMOVE_GEM'
+  };
+}
+
+/***/ }),
 /* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41905,15 +41966,20 @@ var _favorites = __webpack_require__(604);
 
 var _favorites2 = _interopRequireDefault(_favorites);
 
-var _gems = __webpack_require__(605);
+var _gem = __webpack_require__(616);
 
-var _gems2 = _interopRequireDefault(_gems);
+var _gem2 = _interopRequireDefault(_gem);
+
+var _error = __webpack_require__(617);
+
+var _error2 = _interopRequireDefault(_error);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var rootReducer = (0, _redux.combineReducers)({
   favorites: _favorites2.default,
-  gems: _gems2.default,
+  gem: _gem2.default,
+  error: _error2.default,
   routing: _reactRouterRedux.routerReducer
 });
 
@@ -41955,54 +42021,7 @@ function favorites() {
 exports.default = favorites;
 
 /***/ }),
-/* 605 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-function gemDependencies() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var action = arguments[1];
-
-  switch (action.type) {
-    case "ADD_DEPENDENCIES":
-      return [];
-
-    default:
-      return state;
-  }
-}
-
-function gems() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var action = arguments[1];
-
-  switch (action.type) {
-    case "ADD_GEM":
-      return {
-        name: action.name,
-        url: action.url,
-        favorited: false,
-        searched: true
-      };
-
-    case "QUERY_GEM":
-      return {
-        name: action.name
-      };
-
-    default:
-      return state;
-  }
-}
-
-exports.default = gems;
-
-/***/ }),
+/* 605 */,
 /* 606 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42027,6 +42046,10 @@ var _reactTransformCatchErrors4 = _interopRequireDefault(_reactTransformCatchErr
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _searchDetailsItem = __webpack_require__(618);
+
+var _searchDetailsItem2 = _interopRequireDefault(_searchDetailsItem);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42037,12 +42060,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   App: {
-    displayName: "App"
+    displayName: 'App'
   }
 };
 
 var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-  filename: "/Users/retraido/sandbox/gtDevTest/client/components/app.jsx",
+  filename: '/Users/retraido/sandbox/gtDevTest/client/components/app.jsx',
   components: _components,
   locals: [],
   imports: [_react3.default, _redboxReact3.default]
@@ -42054,7 +42077,7 @@ function _wrapComponent(id) {
   };
 }
 
-var App = _wrapComponent("App")(function (_Component) {
+var App = _wrapComponent('App')(function (_Component) {
   _inherits(App, _Component);
 
   function App() {
@@ -42064,37 +42087,60 @@ var App = _wrapComponent("App")(function (_Component) {
   }
 
   _createClass(App, [{
-    key: "submitHandler",
+    key: 'submitHandler',
     value: function submitHandler(e) {
       e.preventDefault();
       var query = this.refs.query.value;
-      // this.props.queryGem(query);
+      this.props.queryGem(query);
     }
   }, {
-    key: "render",
+    key: 'errorTest',
+    value: function errorTest() {
+      return this.props.error ? true : false;
+    }
+  }, {
+    key: 'issueResultsOrError',
+    value: function issueResultsOrError() {
+      if (this.errorTest()) {
+        return _react3.default.createElement(
+          'div',
+          { className: 'search__error' },
+          _react3.default.createElement(
+            'p',
+            null,
+            'Oh no! Looks like that gem can\'t be found.'
+          )
+        );
+      } else if (this.props.gem.info != '') {
+        return _react3.default.createElement(_searchDetailsItem2.default, this.props);
+      }
+    }
+  }, {
+    key: 'render',
     value: function render() {
       return _react3.default.createElement(
-        "div",
-        { className: "wrapper__content" },
+        'div',
+        { className: 'wrapper__content' },
         _react3.default.createElement(
-          "div",
-          { className: "search__title" },
+          'div',
+          { className: 'search__title' },
           _react3.default.createElement(
-            "h1",
+            'h1',
             null,
-            "Search Gems"
+            'Search Gems'
           )
         ),
         _react3.default.createElement(
-          "div",
-          { className: "search__bar" },
-          _react3.default.createElement("input", {
-            className: "search__input",
-            ref: "query",
-            type: "text",
-            placeholder: "Search" }),
-          _react3.default.createElement("div", { className: "search__submit", onClick: this.submitHandler.bind(this) })
-        )
+          'div',
+          { className: 'search__bar' },
+          _react3.default.createElement('input', {
+            className: 'search__input',
+            ref: 'query',
+            type: 'text',
+            placeholder: 'Search' }),
+          _react3.default.createElement('div', { className: 'search__submit', onClick: this.submitHandler.bind(this) })
+        ),
+        this.issueResultsOrError()
       );
     }
   }]);
@@ -45281,12 +45327,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   Favorites: {
-    displayName: "Favorites"
+    displayName: 'Favorites'
   }
 };
 
 var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-  filename: "/Users/retraido/sandbox/gtDevTest/client/components/favorites.jsx",
+  filename: '/Users/retraido/sandbox/gtDevTest/client/components/favorites.jsx',
   components: _components,
   locals: [],
   imports: [_react3.default, _redboxReact3.default]
@@ -45298,7 +45344,7 @@ function _wrapComponent(id) {
   };
 }
 
-var Favorites = _wrapComponent("Favorites")(function (_Component) {
+var Favorites = _wrapComponent('Favorites')(function (_Component) {
   _inherits(Favorites, _Component);
 
   function Favorites() {
@@ -45308,20 +45354,26 @@ var Favorites = _wrapComponent("Favorites")(function (_Component) {
   }
 
   _createClass(Favorites, [{
-    key: "render",
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      console.log('mounted');
+      this.props.removeGem();
+    }
+  }, {
+    key: 'render',
     value: function render() {
       return _react3.default.createElement(
-        "div",
-        { className: "favorites" },
+        'div',
+        { className: 'favorites' },
         _react3.default.createElement(
-          "h1",
+          'h1',
           null,
-          "Your Favorite Gems"
+          'Your Favorite Gems'
         ),
         _react3.default.createElement(
-          "div",
-          { className: "favorites__gem-list" },
-          _react3.default.createElement("ul", null)
+          'div',
+          { className: 'favorites__gem-list' },
+          _react3.default.createElement('ul', null)
         )
       );
     }
@@ -45331,6 +45383,309 @@ var Favorites = _wrapComponent("Favorites")(function (_Component) {
 }(_react2.Component));
 
 exports.default = Favorites;
+
+/***/ }),
+/* 614 */,
+/* 615 */,
+/* 616 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function gemDependencies() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "ADD_DEPENDENCIES":
+      return [];
+
+    default:
+      return state;
+  }
+}
+
+function gem() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "ADD_GEM":
+      return _extends({}, state, {
+        name: action.name,
+        url: action.url,
+        info: action.info,
+        favorited: false
+      });
+
+    case "REMOVE_GEM":
+      return _extends({}, state, {
+        name: '',
+        info: '',
+        url: ''
+      });
+
+    case "QUERY_GEM":
+      return {
+        name: action.name
+      };
+
+    default:
+      return state;
+  }
+}
+
+exports.default = gem;
+
+/***/ }),
+/* 617 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function error() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "TOGGLE_ERROR_ON":
+      return _extends({}, state, {
+        error: true
+      });
+
+    case "TOGGLE_ERROR_OFF":
+      return _extends({}, state, {
+        error: false
+      });
+
+    default:
+      return state;
+  }
+}
+
+exports.default = error;
+
+/***/ }),
+/* 618 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redboxReact2 = __webpack_require__(241);
+
+var _redboxReact3 = _interopRequireDefault(_redboxReact2);
+
+var _react2 = __webpack_require__(13);
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _reactTransformCatchErrors3 = __webpack_require__(242);
+
+var _reactTransformCatchErrors4 = _interopRequireDefault(_reactTransformCatchErrors3);
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  SearchDetailsItem: {
+    displayName: "SearchDetailsItem"
+  }
+};
+
+var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
+  filename: "/Users/retraido/sandbox/gtDevTest/client/components/searchDetailsItem.jsx",
+  components: _components,
+  locals: [],
+  imports: [_react3.default, _redboxReact3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _reactTransformCatchErrors2(Component, id);
+  };
+}
+
+var SearchDetailsItem = _wrapComponent("SearchDetailsItem")(function (_Component) {
+  _inherits(SearchDetailsItem, _Component);
+
+  function SearchDetailsItem() {
+    _classCallCheck(this, SearchDetailsItem);
+
+    return _possibleConstructorReturn(this, (SearchDetailsItem.__proto__ || Object.getPrototypeOf(SearchDetailsItem)).apply(this, arguments));
+  }
+
+  _createClass(SearchDetailsItem, [{
+    key: "render",
+    value: function render() {
+      var gem = this.props.gem;
+
+
+      return _react3.default.createElement(
+        "div",
+        { className: "search__details" },
+        _react3.default.createElement(
+          "p",
+          null,
+          gem.name
+        ),
+        _react3.default.createElement(
+          "div",
+          { className: "details__info" },
+          _react3.default.createElement(
+            "p",
+            { className: "details__title--color" },
+            "INFORMATION"
+          ),
+          _react3.default.createElement(
+            "p",
+            { className: "details__copy--color" },
+            gem.info
+          )
+        ),
+        _react3.default.createElement(
+          "div",
+          { className: "details__dependencies" },
+          _react3.default.createElement(
+            "p",
+            { className: "details__title--color" },
+            "DEPENDENCIES"
+          ),
+          _react3.default.createElement("ul", { className: "dependencies__list" })
+        )
+      );
+    }
+  }]);
+
+  return SearchDetailsItem;
+}(_react2.Component));
+
+;
+
+exports.default = SearchDetailsItem;
+
+/***/ }),
+/* 619 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__(151);
+
+var _reactRedux = __webpack_require__(563);
+
+var _actionCreators = __webpack_require__(602);
+
+var actionCreators = _interopRequireWildcard(_actionCreators);
+
+var _app = __webpack_require__(606);
+
+var _app2 = _interopRequireDefault(_app);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function mapStateToProps(state) {
+  var gem = state.gem,
+      favorites = state.favorites,
+      error = state.error,
+      searched = state.searched;
+
+
+  return {
+    gem: gem,
+    favorites: favorites,
+    error: error,
+    searched: searched
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return (0, _redux.bindActionCreators)(actionCreators, dispatch);
+}
+
+var AppConnector = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_app2.default);
+
+exports.default = AppConnector;
+
+/***/ }),
+/* 620 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__(151);
+
+var _reactRedux = __webpack_require__(563);
+
+var _actionCreators = __webpack_require__(602);
+
+var actionCreators = _interopRequireWildcard(_actionCreators);
+
+var _favorites = __webpack_require__(613);
+
+var _favorites2 = _interopRequireDefault(_favorites);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function mapStateToProps(state) {
+  var gem = state.gem,
+      favorites = state.favorites,
+      searched = state.searched;
+
+
+  return {
+    gem: gem,
+    favorites: favorites,
+    searched: searched
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return (0, _redux.bindActionCreators)(actionCreators, dispatch);
+}
+
+var FavoritesConnector = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_favorites2.default);
+
+exports.default = FavoritesConnector;
 
 /***/ })
 /******/ ]);

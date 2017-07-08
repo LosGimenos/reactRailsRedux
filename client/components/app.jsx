@@ -1,11 +1,33 @@
 import React, { Component } from 'react';
 
+import SearchDetailsItem from './searchDetailsItem.jsx';
+
 export default class App extends Component {
 
   submitHandler(e) {
     e.preventDefault();
     const query = this.refs.query.value;
-    // this.props.queryGem(query);
+    this.props.queryGem(query);
+  }
+
+  errorTest() {
+    return (this.props.error) ? true : false;
+  }
+
+  issueResultsOrError() {
+    if (this.errorTest()) {
+      return (
+        <div className="search__error">
+          <p>Oh no! Looks like that gem can't be found.</p>
+        </div>
+      );
+    } else if (this.props.gem.info != '') {
+        return (
+          <SearchDetailsItem
+            {...this.props}
+          />
+        );
+      }
   }
 
   render() {
@@ -23,6 +45,7 @@ export default class App extends Component {
           <div className="search__submit" onClick={this.submitHandler.bind(this)}>
           </div>
         </div>
+        { this.issueResultsOrError() }
       </div>
     );
   }

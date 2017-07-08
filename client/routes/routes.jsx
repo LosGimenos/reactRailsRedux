@@ -5,9 +5,9 @@ import { ConnectedRouter, routerMiddleware, push } from 'react-router-redux';
 import { Provider } from 'react-redux';
 
 import store from '../store.js';
-import App from '../components/app.jsx';
+import AppConnector from '../components/connectors/appConnector.js';
 import Nav from '../components/nav.jsx';
-import Favorites from '../components/favorites.jsx';
+import FavoritesConnector from '../components/connectors/favoritesConnector.js';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -18,8 +18,8 @@ const Routes = () => (
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/favorites" component={Favorites} />
+          <Route exact path="/" component={AppConnector} />
+          <Route path="/favorites" component={FavoritesConnector} />
         </Switch>
       </div>
     </ConnectedRouter>

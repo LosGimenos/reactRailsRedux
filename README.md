@@ -38,6 +38,4 @@ calls as the list is being generated.
 static elements. Things got a little jazzy when the elements began to 
 fill with content. 
 
-### Thanks again! Please let me know if you ave any questions.
-
 [Larry Hernandez](http://larryh.win)

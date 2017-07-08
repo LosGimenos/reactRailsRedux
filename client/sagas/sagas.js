@@ -6,15 +6,24 @@ export function* createGemAsync(action) {
   try {
     const response = yield call(
                              request.get,
-                             'http://localhost:3000/api/v1/gems');
-    console.log(response);
+                             'http://localhost:3000/api/v1/gems',
+                             {"query": action.name});
+
+    const jsonResponse = JSON.parse(response.text);
+    const name = jsonResponse.name;
+    const url = jsonResponse.project_uri;
+    const info = jsonResponse.info;
+
+    console.log(info)
+    yield put({type: "ADD_GEM", name, url, info})
+
   } catch(e) {
     console.log('Request failed! Check this out: ', e);
+    yield put({type: "TOGGLE_ERROR_ON"})
   }
 }
 
 export function* watchCreateGem() {
-  console.log('saga is running');
   yield takeEvery("QUERY_GEM", createGemAsync);
 }
 

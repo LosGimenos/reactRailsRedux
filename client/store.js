@@ -6,20 +6,20 @@ import rootReducer from './reducers/index.js';
 
 const sagaMiddleware = createSagaMiddleware();
 const defaultState = {
-   // favorites: [],
-   // gems: {
-   //   name: '',
-   //   url: '',
-   //   favorited: false,
-   //   dependencies: []
-   // },
-   // dependency: {
-   //   name: '',
-   //   url: '',
-   //   favorited: false
-   // },
-   // error: false,
-   // searched: false
+   favorites: [],
+   gem: {
+     name: '',
+     url: '',
+     info: '',
+     favorited: false,
+     dependencies: []
+   },
+   dependency: {
+     name: '',
+     url: '',
+     favorited: false
+   },
+   error: false
 };
 
 const store = createStore(

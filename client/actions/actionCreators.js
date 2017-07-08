@@ -20,11 +20,17 @@ export function queryGem(name) {
   }
 }
 
-export function addGem(name, url, dependencies) {
+export function addGem(name, url, info) {
   return {
     type: 'ADD_GEM',
     name,
     url,
-    dependencies
+    info
+  }
+}
+
+export function removeGem() {
+  return {
+    type: 'REMOVE_GEM'
   }
 }
