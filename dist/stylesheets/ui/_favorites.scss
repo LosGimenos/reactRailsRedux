@@ -18,24 +18,22 @@
   position: relative;
   color: $lato-blue;
   font-weight: $lightest;
-  width: 50%;
+  width: 40%;
   padding-left: 10%;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .favorites__star {
   position: absolute;
-  top: 5%;
-  left: 5%;
-  background: url($details-star-gray);
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.favorites__star--favorited {
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 10%;
+  right: 0;
   background: url($details-star-blue);
   width: 15px;
   height: 15px;

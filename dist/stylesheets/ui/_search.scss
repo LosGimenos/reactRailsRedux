@@ -88,10 +88,18 @@
   position: relative;
   width: 17%;
   color: $lato-blue;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 
   p {
     font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 

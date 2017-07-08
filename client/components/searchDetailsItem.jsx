@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GemName from './gemName.jsx';
 
 class SearchDetailsItem extends Component {
   render() {
@@ -6,7 +7,11 @@ class SearchDetailsItem extends Component {
 
     return (
       <div className="search__details">
-          <p>{gem.name}</p>
+          <GemName
+            { ...this.props }
+            gemStyle={'details__name'}
+            starStyle={'details__star'}
+          />
           <div className="details__info">
             <p className="details__title--color">INFORMATION</p>
             <p className="details__copy--color">{gem.info}</p>
