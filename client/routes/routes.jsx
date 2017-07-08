@@ -1,39 +1,29 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import App from '../components/app.jsx';
+import createHistory from 'history/createBrowserHistory';
+import { ConnectedRouter, routerMiddleware, push } from 'react-router-redux';
+import { Provider } from 'react-redux';
+
+import store from '../store.js';
+import AppConnector from '../components/connectors/appConnector.js';
 import Nav from '../components/nav.jsx';
-import Favorites from '../components/favorites.jsx';
+import FavoritesConnector from '../components/connectors/favoritesConnector.js';
 
-let favoriteGems = [];
-
-function addFavorites(gem) {
-  favoriteGems.push(gem);
-}
-
-function removeFavorites(gem) {
-  favoriteGems = favoriteGems.filter((savedGem) => {
-    return savedGem.name != gem;
-  });
-}
+const history = createHistory();
+const middleware = routerMiddleware(history);
 
 const Routes = () => (
-  <Router>
-    <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/" render={() => (<App
-                                              favoriteGems={favoriteGems}
-                                              addFavorites={addFavorites}
-                                              removeFavorites={removeFavorites}
-                                              />)} />
-        <Route path ="/favorites" render={() => (<Favorites
-                                                    addFavorites={addFavorites}
-                                                    favoriteGems={favoriteGems}
-                                                    removeFavorites={removeFavorites}
-                                                  />)} />
-      </Switch>
-    </div>
-  </Router>
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={AppConnector} />
+          <Route path="/favorites" component={FavoritesConnector} />
+        </Switch>
+      </div>
+    </ConnectedRouter>
+  </Provider>
 );
 
 export default Routes;

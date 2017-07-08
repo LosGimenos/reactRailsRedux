@@ -1,12 +1,6 @@
-# Teachable Growth Team Developer Test
-## Larry Hernandez
+# React Rails Redux Implementation
 
-Thanks for issuing this challenge! Was certainly fun to work on.
-
-I decided to build a separate client in React to connect to Rails. 
-Generally I will opt for separate clients especially relatively 
-light-weight options such as React considering the amount of 
-state-storing behavior occuring in this app.   
+Previous challenge applying Redux layer and Saga for asyc. 
 
 ### Instructions
 (Requires Rails and Node. ``` $Bundle ``` and ```$npm install``` 
@@ -43,7 +37,5 @@ calls as the list is being generated.
 4. Not responsive. My first attempts with Flexbox here worked well with 
 static elements. Things got a little jazzy when the elements began to 
 fill with content. 
-
-### Thanks again! Please let me know if you ave any questions.
 
 [Larry Hernandez](http://larryh.win)
