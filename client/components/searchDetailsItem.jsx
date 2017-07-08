@@ -9,6 +9,8 @@ class SearchDetailsItem extends Component {
       <div className="search__details">
           <GemName
             { ...this.props }
+            gemStyle={'details__name'}
+            starStyle={'details__star'}
           />
           <div className="details__info">
             <p className="details__title--color">INFORMATION</p>

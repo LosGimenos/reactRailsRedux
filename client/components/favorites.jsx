@@ -4,7 +4,6 @@ import GemName from './gemName.jsx';
 export default class Favorites extends Component {
 
   componentDidMount() {
-    console.log('mounted')
     this.props.removeGem();
   }
 
@@ -15,6 +14,8 @@ export default class Favorites extends Component {
           <GemName
             removeFavorite={this.props.removeFavorite}
             gem={gem}
+            gemStyle={'favorites__gem-name'}
+            starStyle={'favorites__star'}
             i={index}
           />
         </li>

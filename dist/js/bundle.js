@@ -35652,7 +35652,7 @@ exports = module.exports = __webpack_require__(529)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 50%;\n  padding-left: 10%; }\n\n.favorites__star {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(216) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__star--favorited {\n  position: absolute;\n  top: 5%;\n  left: 5%;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 40%;\n  padding-left: 10%; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -45360,7 +45360,6 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
   _createClass(Favorites, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      console.log('mounted');
       this.props.removeGem();
     }
   }, {
@@ -45375,6 +45374,8 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
           _react3.default.createElement(_gemName2.default, {
             removeFavorite: _this2.props.removeFavorite,
             gem: gem,
+            gemStyle: 'favorites__gem-name',
+            starStyle: 'favorites__star',
             i: index
           })
         );
@@ -45524,6 +45525,8 @@ var _reactTransformCatchErrors3 = __webpack_require__(242);
 
 var _reactTransformCatchErrors4 = _interopRequireDefault(_reactTransformCatchErrors3);
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _gemName = __webpack_require__(621);
@@ -45575,7 +45578,10 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
       return _react3.default.createElement(
         'div',
         { className: 'search__details' },
-        _react3.default.createElement(_gemName2.default, this.props),
+        _react3.default.createElement(_gemName2.default, _extends({}, this.props, {
+          gemStyle: 'details__name',
+          starStyle: 'details__star'
+        })),
         _react3.default.createElement(
           'div',
           { className: 'details__info' },
@@ -45744,12 +45750,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   GemName: {
-    displayName: "GemName"
+    displayName: 'GemName'
   }
 };
 
 var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-  filename: "/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx",
+  filename: '/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx',
   components: _components,
   locals: [],
   imports: [_react3.default, _redboxReact3.default]
@@ -45761,7 +45767,7 @@ function _wrapComponent(id) {
   };
 }
 
-var GemName = _wrapComponent("GemName")(function (_Component) {
+var GemName = _wrapComponent('GemName')(function (_Component) {
   _inherits(GemName, _Component);
 
   function GemName() {
@@ -45771,36 +45777,39 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
   }
 
   _createClass(GemName, [{
-    key: "clickHandler",
+    key: 'clickHandler',
     value: function clickHandler() {
       if (!this.props.gem.favorited) {
+        console.log('favorited');
         this.props.addFavorite(this.props.gem.name, this.props.gem.url);
       } else {
+        console.log('nope');
         this.props.removeFavorite(this.props.i);
       }
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
+      console.log(this.props.starStyle, this.props.gemStyle);
       var gem = this.props.gem;
 
       return _react3.default.createElement(
-        "div",
-        { className: "details__name" },
+        'div',
+        { className: this.props.gemStyle },
         _react3.default.createElement(
-          "div",
+          'div',
           null,
           _react3.default.createElement(
-            "a",
-            { href: gem.url, target: "_blank" },
+            'a',
+            { href: gem.url, target: '_blank' },
             _react3.default.createElement(
-              "p",
+              'p',
               null,
               gem.name
             )
           )
         ),
-        _react3.default.createElement("div", { className: "details__star", onClick: this.clickHandler.bind(this) })
+        _react3.default.createElement('div', { className: this.props.starStyle, onClick: this.clickHandler.bind(this) })
       );
     }
   }]);
