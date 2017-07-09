@@ -149,18 +149,57 @@
   width: 100%;
 
   ul {
-    position: relative;
-    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    position: absolute;
+    width: 100%;
+    top: 4%;
     left: -5%;
     list-style: none;
   }
 
   li {
-    height: 20px;
-    // width: 40%;
+    height: 1.5em;
+    width: 50%;
   }
 
   p {
     font-size: 15px;
   }
+}
+
+.dependency__gem-name {
+  display: inline-block;
+  position: relative;
+  width: 35%;
+  color: $lato-blue;
+  margin-bottom: 1%;
+
+  p {
+    font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.dependency__star {
+  position: absolute;
+  background: url($details-star-gray);
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 2em;
+  right: 0;
+  top: 34%;
+  cursor: pointer;
+}
+
+.dependency__star--favorited {
+
 }

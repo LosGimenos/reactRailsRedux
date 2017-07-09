@@ -18,8 +18,12 @@
   position: relative;
   color: $lato-blue;
   font-weight: $lightest;
-  width: 35%;
+  width: 42%;
   padding-left: 10%;
+
+  p {
+    font-size: 15px;
+  }
 
   a {
     text-decoration: none;

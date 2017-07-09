@@ -16,8 +16,8 @@ class SearchDetailsItem extends Component {
             addFavorite={this.props.addFavorite}
             removeFavorite={this.props.removeFavorite}
             gem={dependencyName}
-            gemStyle={'details__name'}
-            starStyle={'details_star'}
+            gemStyle={'dependency__gem-name'}
+            starStyle={'dependency__star'}
             i={index}
           />
         </li>
