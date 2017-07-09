@@ -2,8 +2,27 @@ import React, { Component } from 'react';
 import GemName from './gemName.jsx';
 
 class SearchDetailsItem extends Component {
+
   render() {
     const { gem } = this.props;
+    console.log('details component', gem)
+
+    const renderDependencies = gem.dependenciesList.map((dependency, index) => {
+      const dependencyName = {name: dependency}
+
+      return (
+        <li key={index}>
+          <GemName
+            addFavorite={this.props.addFavorite}
+            removeFavorite={this.props.removeFavorite}
+            gem={dependencyName}
+            gemStyle={'details__name'}
+            starStyle={'details_star'}
+            i={index}
+          />
+        </li>
+      );
+    })
 
     return (
       <div className="search__details">
@@ -19,6 +38,7 @@ class SearchDetailsItem extends Component {
           <div className="details__dependencies">
             <p className="details__title--color">DEPENDENCIES</p>
             <ul className="dependencies__list">
+              { renderDependencies }
             </ul>
           </div>
         </div>

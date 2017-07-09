@@ -13,7 +13,9 @@ export function* createGemAsync(action) {
     const name = jsonResponse.name;
     const url = jsonResponse.project_uri;
     const info = jsonResponse.info;
+    const dependencies = jsonResponse.dependencies;
 
+    yield put({type: "FETCH_DEPENDENCIES", dependencies})
     yield put({type: "ADD_GEM", name, url, info})
 
   } catch(e) {
@@ -21,12 +23,34 @@ export function* createGemAsync(action) {
   }
 }
 
+export function* fetchDependencies(action) {
+  try {
+    const dependenciesObject = action.dependencies;
+    const dependencyNames = [];
+    const keys = Object.keys(dependenciesObject);
+    for (let i = 0; i < keys.length; i++) {
+      for (let j = 0; j < dependenciesObject[keys[i]].length; j++) {
+        dependencyNames.push(dependenciesObject[keys[i]][j].name);
+      }
+    }
+
+    yield put({type: "ADD_GEM_DEPENDENCIES", dependencyNames})
+  } catch(e) {
+
+  }
+}
+
 export function* watchCreateGem() {
   yield takeEvery("QUERY_GEM", createGemAsync);
 }
 
+export function* watchFetchDependencies() {
+  yield takeEvery("FETCH_DEPENDENCIES", fetchDependencies)
+}
+
 export default function* rootSaga() {
   yield [
-    watchCreateGem()
+    watchCreateGem(),
+    watchFetchDependencies()
   ]
 }

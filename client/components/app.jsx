@@ -11,7 +11,6 @@ export default class App extends Component {
   }
 
   errorTest() {
-    console.log('errortest', this.props)
     return (this.props.error) ? true : false;
   }
 

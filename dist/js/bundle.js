@@ -39552,13 +39552,9 @@ var defaultState = {
     url: '',
     info: '',
     favorited: false,
-    dependencies: []
+    dependenciesList: []
   },
-  dependency: {
-    name: '',
-    url: '',
-    favorited: false
-  },
+  dependencies: [],
   error: false
 };
 
@@ -39839,7 +39835,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.createGemAsync = createGemAsync;
+exports.fetchDependencies = fetchDependencies;
 exports.watchCreateGem = watchCreateGem;
+exports.watchFetchDependencies = watchFetchDependencies;
 exports.default = rootSaga;
 
 var _reduxSaga = __webpack_require__(235);
@@ -39852,10 +39850,10 @@ var _superagent2 = _interopRequireDefault(_superagent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _marked = [createGemAsync, watchCreateGem, rootSaga].map(regeneratorRuntime.mark);
+var _marked = [createGemAsync, fetchDependencies, watchCreateGem, watchFetchDependencies, rootSaga].map(regeneratorRuntime.mark);
 
 function createGemAsync(action) {
-  var response, jsonResponse, name, url, info;
+  var response, jsonResponse, name, url, info, dependencies;
   return regeneratorRuntime.wrap(function createGemAsync$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -39870,50 +39868,75 @@ function createGemAsync(action) {
           name = jsonResponse.name;
           url = jsonResponse.project_uri;
           info = jsonResponse.info;
-          _context.next = 10;
+          dependencies = jsonResponse.dependencies;
+          _context.next = 11;
+          return (0, _effects.put)({ type: "FETCH_DEPENDENCIES", dependencies: dependencies });
+
+        case 11:
+          _context.next = 13;
           return (0, _effects.put)({ type: "ADD_GEM", name: name, url: url, info: info });
 
-        case 10:
-          _context.next = 16;
+        case 13:
+          _context.next = 19;
           break;
 
-        case 12:
-          _context.prev = 12;
+        case 15:
+          _context.prev = 15;
           _context.t0 = _context['catch'](0);
-          _context.next = 16;
+          _context.next = 19;
           return (0, _effects.put)({ type: "TOGGLE_ERROR_ON" });
 
-        case 16:
+        case 19:
         case 'end':
           return _context.stop();
       }
     }
-  }, _marked[0], this, [[0, 12]]);
+  }, _marked[0], this, [[0, 15]]);
 }
 
-function watchCreateGem() {
-  return regeneratorRuntime.wrap(function watchCreateGem$(_context2) {
+function fetchDependencies(action) {
+  var dependenciesObject, dependencyNames, keys, i, j;
+  return regeneratorRuntime.wrap(function fetchDependencies$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          _context2.next = 2;
-          return (0, _reduxSaga.takeEvery)("QUERY_GEM", createGemAsync);
+          _context2.prev = 0;
+          dependenciesObject = action.dependencies;
+          dependencyNames = [];
+          keys = Object.keys(dependenciesObject);
 
-        case 2:
+          for (i = 0; i < keys.length; i++) {
+            for (j = 0; j < dependenciesObject[keys[i]].length; j++) {
+              dependencyNames.push(dependenciesObject[keys[i]][j].name);
+            }
+          }
+
+          _context2.next = 7;
+          return (0, _effects.put)({ type: "ADD_GEM_DEPENDENCIES", dependencyNames: dependencyNames });
+
+        case 7:
+          _context2.next = 11;
+          break;
+
+        case 9:
+          _context2.prev = 9;
+          _context2.t0 = _context2['catch'](0);
+
+        case 11:
         case 'end':
           return _context2.stop();
       }
     }
-  }, _marked[1], this);
+  }, _marked[1], this, [[0, 9]]);
 }
 
-function rootSaga() {
-  return regeneratorRuntime.wrap(function rootSaga$(_context3) {
+function watchCreateGem() {
+  return regeneratorRuntime.wrap(function watchCreateGem$(_context3) {
     while (1) {
       switch (_context3.prev = _context3.next) {
         case 0:
           _context3.next = 2;
-          return [watchCreateGem()];
+          return (0, _reduxSaga.takeEvery)("QUERY_GEM", createGemAsync);
 
         case 2:
         case 'end':
@@ -39921,6 +39944,38 @@ function rootSaga() {
       }
     }
   }, _marked[2], this);
+}
+
+function watchFetchDependencies() {
+  return regeneratorRuntime.wrap(function watchFetchDependencies$(_context4) {
+    while (1) {
+      switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.next = 2;
+          return (0, _reduxSaga.takeEvery)("FETCH_DEPENDENCIES", fetchDependencies);
+
+        case 2:
+        case 'end':
+          return _context4.stop();
+      }
+    }
+  }, _marked[3], this);
+}
+
+function rootSaga() {
+  return regeneratorRuntime.wrap(function rootSaga$(_context5) {
+    while (1) {
+      switch (_context5.prev = _context5.next) {
+        case 0:
+          _context5.next = 2;
+          return [watchCreateGem(), watchFetchDependencies()];
+
+        case 2:
+        case 'end':
+          return _context5.stop();
+      }
+    }
+  }, _marked[4], this);
 }
 
 /***/ }),
@@ -41906,6 +41961,7 @@ exports.queryGem = queryGem;
 exports.addGem = addGem;
 exports.removeGem = removeGem;
 exports.toggleErrorOff = toggleErrorOff;
+exports.fetchDependencies = fetchDependencies;
 function addFavorite(name, url) {
   return {
     type: 'ADD_FAVORITE',
@@ -41949,6 +42005,13 @@ function toggleErrorOff() {
   };
 }
 
+function fetchDependencies(dependencies) {
+  return {
+    type: "FETCH_DEPENDENCIES",
+    dependencies: dependencies
+  };
+}
+
 /***/ }),
 /* 603 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -41976,12 +42039,17 @@ var _error = __webpack_require__(617);
 
 var _error2 = _interopRequireDefault(_error);
 
+var _dependencies = __webpack_require__(622);
+
+var _dependencies2 = _interopRequireDefault(_dependencies);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var rootReducer = (0, _redux.combineReducers)({
   favorites: _favorites2.default,
   gem: _gem2.default,
   error: _error2.default,
+  dependencies: _dependencies2.default,
   routing: _reactRouterRedux.routerReducer
 });
 
@@ -42098,7 +42166,6 @@ var App = _wrapComponent('App')(function (_Component) {
   }, {
     key: 'errorTest',
     value: function errorTest() {
-      console.log('errortest', this.props);
       return this.props.error ? true : false;
     }
   }, {
@@ -45426,19 +45493,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-function gemDependencies() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var action = arguments[1];
-
-  switch (action.type) {
-    case "ADD_DEPENDENCIES":
-      return [];
-
-    default:
-      return state;
-  }
-}
-
 function gem() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments[1];
@@ -45463,6 +45517,12 @@ function gem() {
       return {
         name: action.name
       };
+
+    case "ADD_GEM_DEPENDENCIES":
+      console.log('reducer', state, action.dependencyNames);
+      return _extends({}, state, {
+        dependenciesList: action.dependencyNames
+      });
 
     default:
       return state;
@@ -45569,8 +45629,28 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
   _createClass(SearchDetailsItem, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var gem = this.props.gem;
 
+      console.log('details component', gem);
+
+      var renderDependencies = gem.dependenciesList.map(function (dependency, index) {
+        var dependencyName = { name: dependency };
+
+        return _react3.default.createElement(
+          'li',
+          { key: index },
+          _react3.default.createElement(_gemName2.default, {
+            addFavorite: _this2.props.addFavorite,
+            removeFavorite: _this2.props.removeFavorite,
+            gem: dependencyName,
+            gemStyle: 'details__name',
+            starStyle: 'details_star',
+            i: index
+          })
+        );
+      });
 
       return _react3.default.createElement(
         'div',
@@ -45601,7 +45681,11 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
             { className: 'details__title--color' },
             'DEPENDENCIES'
           ),
-          _react3.default.createElement('ul', { className: 'dependencies__list' })
+          _react3.default.createElement(
+            'ul',
+            { className: 'dependencies__list' },
+            renderDependencies
+          )
         )
       );
     }
@@ -45747,12 +45831,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   GemName: {
-    displayName: 'GemName'
+    displayName: "GemName"
   }
 };
 
 var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-  filename: '/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx',
+  filename: "/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx",
   components: _components,
   locals: [],
   imports: [_react3.default, _redboxReact3.default]
@@ -45764,7 +45848,7 @@ function _wrapComponent(id) {
   };
 }
 
-var GemName = _wrapComponent('GemName')(function (_Component) {
+var GemName = _wrapComponent("GemName")(function (_Component) {
   _inherits(GemName, _Component);
 
   function GemName() {
@@ -45774,39 +45858,36 @@ var GemName = _wrapComponent('GemName')(function (_Component) {
   }
 
   _createClass(GemName, [{
-    key: 'clickHandler',
+    key: "clickHandler",
     value: function clickHandler() {
       if (!this.props.gem.favorited) {
-        console.log('favorited');
         this.props.addFavorite(this.props.gem.name, this.props.gem.url);
       } else {
-        console.log('nope');
         this.props.removeFavorite(this.props.i);
       }
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
-      console.log(this.props.starStyle, this.props.gemStyle);
       var gem = this.props.gem;
 
       return _react3.default.createElement(
-        'div',
+        "div",
         { className: this.props.gemStyle },
         _react3.default.createElement(
-          'div',
+          "div",
           null,
           _react3.default.createElement(
-            'a',
-            { href: gem.url, target: '_blank' },
+            "a",
+            { href: gem.url, target: "_blank" },
             _react3.default.createElement(
-              'p',
+              "p",
               null,
               gem.name
             )
           )
         ),
-        _react3.default.createElement('div', { className: this.props.starStyle, onClick: this.clickHandler.bind(this) })
+        _react3.default.createElement("div", { className: this.props.starStyle, onClick: this.clickHandler.bind(this) })
       );
     }
   }]);
@@ -45815,6 +45896,31 @@ var GemName = _wrapComponent('GemName')(function (_Component) {
 }(_react2.Component));
 
 exports.default = GemName;
+
+/***/ }),
+/* 622 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function dependencies() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "FETCH_DEPENDENCIES":
+      return action.dependencies;
+
+    default:
+      return state;
+  }
+}
+
+exports.default = dependencies;
 
 /***/ })
 /******/ ]);

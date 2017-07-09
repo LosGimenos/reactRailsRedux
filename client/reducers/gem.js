@@ -1,14 +1,3 @@
-function gemDependencies(state=[], action) {
-  switch(action.type) {
-    case "ADD_DEPENDENCIES":
-      return [
-      ]
-
-    default:
-      return state;
-  }
-}
-
 function gem(state={}, action) {
   switch(action.type) {
     case "ADD_GEM":
@@ -31,6 +20,13 @@ function gem(state={}, action) {
     case "QUERY_GEM":
       return {
           name: action.name
+      }
+
+    case "ADD_GEM_DEPENDENCIES":
+    console.log('reducer', state, action.dependencyNames)
+      return {
+        ...state,
+        dependenciesList: action.dependencyNames
       }
 
     default:

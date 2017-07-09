@@ -40,3 +40,10 @@ export function toggleErrorOff() {
     type: "TOGGLE_ERROR_OFF"
   }
 }
+
+export function fetchDependencies(dependencies) {
+  return {
+    type: "FETCH_DEPENDENCIES",
+    dependencies
+  }
+}
