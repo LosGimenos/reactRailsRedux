@@ -35652,7 +35652,7 @@ exports = module.exports = __webpack_require__(529)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 40%;\n  padding-left: 10%; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 35%;\n  padding-left: 10%; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -39870,30 +39870,25 @@ function createGemAsync(action) {
           name = jsonResponse.name;
           url = jsonResponse.project_uri;
           info = jsonResponse.info;
-
-
-          console.log(info);
-          _context.next = 11;
+          _context.next = 10;
           return (0, _effects.put)({ type: "ADD_GEM", name: name, url: url, info: info });
 
-        case 11:
-          _context.next = 18;
+        case 10:
+          _context.next = 16;
           break;
 
-        case 13:
-          _context.prev = 13;
+        case 12:
+          _context.prev = 12;
           _context.t0 = _context['catch'](0);
-
-          console.log('Request failed! Check this out: ', _context.t0);
-          _context.next = 18;
+          _context.next = 16;
           return (0, _effects.put)({ type: "TOGGLE_ERROR_ON" });
 
-        case 18:
+        case 16:
         case 'end':
           return _context.stop();
       }
     }
-  }, _marked[0], this, [[0, 13]]);
+  }, _marked[0], this, [[0, 12]]);
 }
 
 function watchCreateGem() {
@@ -41910,6 +41905,7 @@ exports.removeFavorite = removeFavorite;
 exports.queryGem = queryGem;
 exports.addGem = addGem;
 exports.removeGem = removeGem;
+exports.toggleErrorOff = toggleErrorOff;
 function addFavorite(name, url) {
   return {
     type: 'ADD_FAVORITE',
@@ -41944,6 +41940,12 @@ function addGem(name, url, info) {
 function removeGem() {
   return {
     type: 'REMOVE_GEM'
+  };
+}
+
+function toggleErrorOff() {
+  return {
+    type: "TOGGLE_ERROR_OFF"
   };
 }
 
@@ -42096,6 +42098,7 @@ var App = _wrapComponent('App')(function (_Component) {
   }, {
     key: 'errorTest',
     value: function errorTest() {
+      console.log('errortest', this.props);
       return this.props.error ? true : false;
     }
   }, {
@@ -42111,7 +42114,7 @@ var App = _wrapComponent('App')(function (_Component) {
             'Oh no! Looks like that gem can\'t be found.'
           )
         );
-      } else if (this.props.gem.info != '') {
+      } else if (this.props.gem.info) {
         return _react3.default.createElement(_searchDetailsItem2.default, this.props);
       }
     }
@@ -45361,6 +45364,7 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.props.removeGem();
+      this.props.toggleErrorOff();
     }
   }, {
     key: 'render',
@@ -45477,23 +45481,16 @@ exports.default = gem;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 function error() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments[1];
 
   switch (action.type) {
     case "TOGGLE_ERROR_ON":
-      return _extends({}, state, {
-        error: true
-      });
+      return true;
 
     case "TOGGLE_ERROR_OFF":
-      return _extends({}, state, {
-        error: false
-      });
+      return false;
 
     default:
       return state;

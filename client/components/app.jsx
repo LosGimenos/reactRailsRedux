@@ -11,6 +11,7 @@ export default class App extends Component {
   }
 
   errorTest() {
+    console.log('errortest', this.props)
     return (this.props.error) ? true : false;
   }
 
@@ -21,7 +22,7 @@ export default class App extends Component {
           <p>Oh no! Looks like that gem can't be found.</p>
         </div>
       );
-    } else if (this.props.gem.info != '') {
+    } else if (this.props.gem.info) {
         return (
           <SearchDetailsItem
             {...this.props}

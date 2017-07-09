@@ -5,6 +5,7 @@ export default class Favorites extends Component {
 
   componentDidMount() {
     this.props.removeGem();
+    this.props.toggleErrorOff();
   }
 
   render() {

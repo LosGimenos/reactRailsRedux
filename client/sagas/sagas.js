@@ -14,11 +14,9 @@ export function* createGemAsync(action) {
     const url = jsonResponse.project_uri;
     const info = jsonResponse.info;
 
-    console.log(info)
     yield put({type: "ADD_GEM", name, url, info})
 
   } catch(e) {
-    console.log('Request failed! Check this out: ', e);
     yield put({type: "TOGGLE_ERROR_ON"})
   }
 }

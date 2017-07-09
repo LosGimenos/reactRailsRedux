@@ -34,3 +34,9 @@ export function removeGem() {
     type: 'REMOVE_GEM'
   }
 }
+
+export function toggleErrorOff() {
+  return {
+    type: "TOGGLE_ERROR_OFF"
+  }
+}
