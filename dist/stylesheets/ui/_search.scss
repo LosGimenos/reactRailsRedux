@@ -183,17 +183,18 @@
   }
 }
 
-.dependency__star {
+.dependency__star,
+.dependency__star--favorited {
   position: absolute;
   background: url($details-star-gray);
   background-repeat: no-repeat;
   width: 1em;
-  height: 2em;
+  height: .9em;
   right: 0;
   top: 34%;
   cursor: pointer;
 }
 
 .dependency__star--favorited {
-
+  background: url($details-star-blue);
 }

@@ -35652,7 +35652,7 @@ exports = module.exports = __webpack_require__(529)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star,\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  background: url(" + __webpack_require__(217) + "); }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    display: flex;\n    flex-direction: column;\n    flex-flow: wrap;\n    position: absolute;\n    width: 100%;\n    top: 4%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 1.5em;\n    width: 50%; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.dependency__gem-name {\n  display: inline-block;\n  position: relative;\n  width: 35%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .dependency__gem-name p {\n    font-size: 15px; }\n  .dependency__gem-name a {\n    text-decoration: none; }\n  .dependency__gem-name a:hover {\n    text-decoration: underline; }\n\n.dependency__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  width: 1em;\n  height: 2em;\n  right: 0;\n  top: 34%;\n  cursor: pointer; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 42%;\n  padding-left: 10%; }\n  .favorites__gem-name p {\n    font-size: 15px; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star,\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  background: url(" + __webpack_require__(217) + "); }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    display: flex;\n    flex-direction: column;\n    flex-flow: wrap;\n    position: absolute;\n    width: 100%;\n    top: 4%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 1.5em;\n    width: 50%; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.dependency__gem-name {\n  display: inline-block;\n  position: relative;\n  width: 35%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .dependency__gem-name p {\n    font-size: 15px; }\n  .dependency__gem-name a {\n    text-decoration: none; }\n  .dependency__gem-name a:hover {\n    text-decoration: underline; }\n\n.dependency__star,\n.dependency__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  width: 1em;\n  height: .9em;\n  right: 0;\n  top: 34%;\n  cursor: pointer; }\n\n.dependency__star--favorited {\n  background: url(" + __webpack_require__(217) + "); }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 42%;\n  padding-left: 10%; }\n  .favorites__gem-name p {\n    font-size: 15px; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -45540,11 +45540,13 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
           'li',
           { key: index },
           _react3.default.createElement(_gemName2.default, {
+            favoritesList: _this2.props.favorites,
             removeFavorite: _this2.props.removeFavorite,
             dependenciesData: _this2.props.dependencies,
             gem: gem,
             gemStyle: 'favorites__gem-name',
             starStyle: 'favorites__star',
+            favoriteStyle: 'favorites__star',
             i: index
           })
         );
@@ -45738,6 +45740,7 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
           'li',
           { key: index },
           _react3.default.createElement(_gemName2.default, {
+            favoritesList: _this2.props.favorites,
             dependenciesData: _this2.props.dependencies,
             addFavorite: _this2.props.addFavorite,
             removeFavorite: _this2.props.removeFavorite,
@@ -45755,7 +45758,8 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
         { className: 'search__details' },
         _react3.default.createElement(_gemName2.default, _extends({}, this.props, {
           gemStyle: 'details__name',
-          starStyle: 'details__star'
+          starStyle: 'details__star',
+          favoriteStyle: 'details__star--favorited'
         })),
         _react3.default.createElement(
           'div',
@@ -45960,7 +45964,14 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
   _createClass(GemName, [{
     key: "checkFavorited",
     value: function checkFavorited() {
-      return this.props.gem.favorited ? true : false;
+      if (this.props.favoritesList) {
+        for (var i = 0; i < this.props.favoritesList.length || 0; i++) {
+          if (this.props.gem.name == this.props.favoritesList[i].name) {
+            return true;
+          }
+        }
+        return false;
+      }
     }
   }, {
     key: "checkStyle",
@@ -45970,10 +45981,15 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
   }, {
     key: "clickHandler",
     value: function clickHandler() {
+      var _this2 = this;
+
       if (!this.checkFavorited()) {
         this.props.addFavorite(this.props.gem.name, this.props.gem.url);
       } else {
-        this.props.removeFavorite(this.props.i);
+        var i = this.props.favoritesList.findIndex(function (favorite) {
+          return favorite.name == _this2.props.gem.name;
+        });
+        this.props.removeFavorite(i);
       }
     }
   }, {

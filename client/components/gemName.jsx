@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 export default class GemName extends Component {
 
   checkFavorited() {
-    return (this.props.gem.favorited) ? true : false;
+    if (this.props.favoritesList) {
+      for (let i = 0; i < this.props.favoritesList.length || 0; i++) {
+        if (this.props.gem.name == this.props.favoritesList[i].name) {
+          return true;
+        }
+      }
+      return false;
+    }
   }
 
   checkStyle() {
@@ -14,7 +21,10 @@ export default class GemName extends Component {
     if (!this.checkFavorited()) {
       this.props.addFavorite(this.props.gem.name, this.props.gem.url);
     } else {
-      this.props.removeFavorite(this.props.i);
+      let i = this.props.favoritesList.findIndex((favorite) => {
+        return favorite.name == this.props.gem.name;
+      })
+      this.props.removeFavorite(i);
     }
   }
 

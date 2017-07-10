@@ -12,6 +12,7 @@ class SearchDetailsItem extends Component {
       return (
         <li key={index}>
           <GemName
+            favoritesList={this.props.favorites}
             dependenciesData={this.props.dependencies}
             addFavorite={this.props.addFavorite}
             removeFavorite={this.props.removeFavorite}
@@ -31,6 +32,7 @@ class SearchDetailsItem extends Component {
             { ...this.props }
             gemStyle={'details__name'}
             starStyle={'details__star'}
+            favoriteStyle={'details__star--favorited'}
           />
           <div className="details__info">
             <p className="details__title--color">INFORMATION</p>
