@@ -12,13 +12,9 @@ const defaultState = {
      url: '',
      info: '',
      favorited: false,
-     dependencies: []
+     dependenciesList: []
    },
-   dependency: {
-     name: '',
-     url: '',
-     favorited: false
-   },
+   dependencies: [],
    error: false
 };
 

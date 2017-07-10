@@ -2,27 +2,43 @@ import React, { Component } from 'react';
 
 export default class GemName extends Component {
 
+  checkFavorited() {
+    if (this.props.favorites) {
+      for (let i = 0; i < this.props.favorites.length; i++) {
+        if (this.props.gem.name == this.props.favorites[i].name) {
+          return true;
+        }
+      }
+      return false;
+    }
+  }
+
+  checkStyle() {
+    return (this.checkFavorited()) ? this.props.favoriteStyle : this.props.starStyle;
+  }
+
   clickHandler() {
-    if (!this.props.gem.favorited) {
-      console.log('favorited')
+    if (!this.checkFavorited()) {
       this.props.addFavorite(this.props.gem.name, this.props.gem.url);
     } else {
-      console.log('nope')
-      this.props.removeFavorite(this.props.i);
+      let i = this.props.favorites.findIndex((favorite) => {
+        return favorite.name == this.props.gem.name;
+      })
+      this.props.removeFavorite(i);
     }
   }
 
   render() {
-    console.log(this.props.starStyle, this.props.gemStyle)
     const { gem } = this.props;
+
     return (
       <div className={this.props.gemStyle}>
          <div>
-          <a href={gem.url} target="_blank">
+          <a href={gem.url || this.props.dependenciesData[gem.name].url} target="_blank">
             <p>{ gem.name }</p>
           </a>
         </div>
-        <div className={this.props.starStyle} onClick={this.clickHandler.bind(this)}>
+        <div className={this.checkStyle()} onClick={this.clickHandler.bind(this)}>
         </div>
       </div>
     );

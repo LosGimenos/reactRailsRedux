@@ -1,16 +1,10 @@
 function error(state={}, action) {
   switch(action.type) {
     case "TOGGLE_ERROR_ON":
-      return {
-        ...state,
-        error: true
-      }
+      return true
 
     case "TOGGLE_ERROR_OFF":
-      return {
-        ...state,
-        error: false
-      }
+      return false
 
     default:
       return state;

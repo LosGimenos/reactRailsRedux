@@ -34,3 +34,29 @@ export function removeGem() {
     type: 'REMOVE_GEM'
   }
 }
+
+export function toggleErrorOff() {
+  return {
+    type: "TOGGLE_ERROR_OFF"
+  }
+}
+
+export function addGemDependencies(dependencyNames) {
+  return {
+    type: "ADD_GEM_DEPENDENCIES",
+    dependencyNames
+  }
+}
+
+export function addDependenciesData(dependenciesData) {
+  return {
+    type: "ADD_DEPENDENCIES_DATA",
+    dependenciesData
+  }
+}
+
+export function clearDependencies() {
+  return {
+    type: "CLEAR_DEPENDENCIES"
+  }
+}

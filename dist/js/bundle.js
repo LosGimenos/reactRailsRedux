@@ -35652,7 +35652,7 @@ exports = module.exports = __webpack_require__(529)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(217) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 40%;\n  height: 15px;\n  cursor: pointer; }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    position: relative;\n    bottom: 10%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 20px; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 40%;\n  padding-left: 10%; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
+exports.push([module.i, "body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif; }\n\n.nav {\n  position: fixed;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  height: 100vh;\n  width: 35%;\n  background: url(" + __webpack_require__(530) + ");\n  background-size: cover;\n  background-position: center; }\n\n.nav__logo {\n  position: absolute;\n  top: 5%;\n  background: url(" + __webpack_require__(531) + ");\n  background-size: contain;\n  background-repeat: no-repeat;\n  width: 28%;\n  height: 2%; }\n\n.nav__ul {\n  list-style: none;\n  width: 26%;\n  margin-bottom: 12%; }\n  .nav__ul li {\n    height: 60%;\n    padding: 2% 0 0 10%; }\n  .nav__ul li:hover {\n    background: rgba(255, 255, 255, 0.17); }\n  .nav__ul a {\n    text-decoration: none;\n    color: #d8d8d8;\n    font-weight: 100; }\n\n.wrapper__content {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n\n.search__title {\n  position: absolute;\n  width: 75%; }\n  .search__title h1 {\n    color: #2C2F33;\n    margin-left: 15%;\n    margin-top: 20%;\n    font-weight: 100; }\n\n.search__bar,\n.search__bar--error {\n  position: absolute;\n  display: flex;\n  justify-content: space-between;\n  margin-top: 20%;\n  margin-left: 5%;\n  width: 75%;\n  height: 8%;\n  border-radius: 35px;\n  border: 1px solid #5f5f5f; }\n  .search__bar input,\n  .search__bar--error input {\n    margin-left: 8%;\n    width: 50%;\n    font-size: 100%;\n    height: 96%;\n    border: none;\n    outline: none; }\n\n.search__bar--error {\n  border: 1px solid #ff4f4f; }\n  .search__bar--error input {\n    color: #ff4f4f; }\n  .search__bar--error input::placeholder {\n    color: #ff4f4f; }\n\n.search__error {\n  position: absolute;\n  color: #ff4f4f;\n  font-weight: 100;\n  margin-top: 33%;\n  margin-left: 25%; }\n\n.search__submit {\n  background: url(" + __webpack_require__(532) + ");\n  background-repeat: no-repeat;\n  margin-right: 3%;\n  align-self: center;\n  height: 34%;\n  width: 5%;\n  cursor: pointer; }\n\n.search__details {\n  position: absolute;\n  bottom: 30%;\n  padding-top: 10%;\n  width: 75%;\n  padding-left: 12%;\n  font-weight: 100; }\n  .search__details h1 {\n    color: #2C2F33; }\n\n.details__name {\n  display: inline-block;\n  position: relative;\n  width: 17%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .details__name p {\n    font-size: 15px; }\n  .details__name a {\n    text-decoration: none; }\n  .details__name a:hover {\n    text-decoration: underline; }\n\n.details__star,\n.details__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  top: 35%;\n  right: -15%;\n  width: 1em;\n  height: .9em;\n  cursor: pointer; }\n\n.details__star--favorited {\n  background: url(" + __webpack_require__(217) + "); }\n\n.details__title--color {\n  color: #2C2F33; }\n\n.details__copy--color {\n  color: #8e8e8e; }\n\n.details__info {\n  position: relative;\n  height: 9em; }\n  .details__info p {\n    font-size: 15px; }\n\n.details__dependencies {\n  position: absolute;\n  top: 90%;\n  height: 100%;\n  width: 100%; }\n  .details__dependencies ul {\n    display: flex;\n    flex-direction: column;\n    flex-flow: wrap;\n    position: absolute;\n    width: 100%;\n    top: 4%;\n    left: -5%;\n    list-style: none; }\n  .details__dependencies li {\n    height: 1.5em;\n    width: 50%; }\n  .details__dependencies p {\n    font-size: 15px; }\n\n.dependency__gem-name {\n  display: inline-block;\n  position: relative;\n  width: 35%;\n  color: #1f68de;\n  margin-bottom: 1%; }\n  .dependency__gem-name p {\n    font-size: 15px; }\n  .dependency__gem-name a {\n    text-decoration: none; }\n  .dependency__gem-name a:hover {\n    text-decoration: underline; }\n\n.dependency__star,\n.dependency__star--favorited {\n  position: absolute;\n  background: url(" + __webpack_require__(216) + ");\n  background-repeat: no-repeat;\n  width: 1em;\n  height: .9em;\n  right: 0;\n  top: 34%;\n  cursor: pointer; }\n\n.dependency__star--favorited {\n  background: url(" + __webpack_require__(217) + "); }\n\n.favorites {\n  position: relative;\n  height: 100vh;\n  left: 35.25%;\n  width: 64.5%;\n  overflow: hidden; }\n  .favorites h1 {\n    position: absolute;\n    left: 5%;\n    top: 20%;\n    font-weight: 100;\n    width: 50%; }\n\n.favorites__gem-name {\n  position: relative;\n  color: #1f68de;\n  font-weight: 100;\n  width: 42%;\n  padding-left: 10%; }\n  .favorites__gem-name p {\n    font-size: 15px; }\n  .favorites__gem-name a {\n    text-decoration: none; }\n  .favorites__gem-name a:hover {\n    text-decoration: underline; }\n\n.favorites__star {\n  position: absolute;\n  top: 10%;\n  right: 0;\n  background: url(" + __webpack_require__(217) + ");\n  width: 15px;\n  height: 15px;\n  cursor: pointer; }\n\n.favorites__gem-list {\n  position: relative;\n  top: 35%;\n  height: calc(55px * 6);\n  width: 100%; }\n  .favorites__gem-list ul {\n    height: 100%;\n    width: 95%;\n    list-style: none; }\n  .favorites__gem-list li {\n    display: inline-block;\n    width: 33%; }\n", ""]);
 
 // exports
 
@@ -39552,13 +39552,9 @@ var defaultState = {
     url: '',
     info: '',
     favorited: false,
-    dependencies: []
+    dependenciesList: []
   },
-  dependency: {
-    name: '',
-    url: '',
-    favorited: false
-  },
+  dependencies: [],
   error: false
 };
 
@@ -39839,7 +39835,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.createGemAsync = createGemAsync;
+exports.fetchDependencies = fetchDependencies;
+exports.getDataDependencies = getDataDependencies;
 exports.watchCreateGem = watchCreateGem;
+exports.watchFetchDependencies = watchFetchDependencies;
+exports.watchGetDataDependencies = watchGetDataDependencies;
 exports.default = rootSaga;
 
 var _reduxSaga = __webpack_require__(235);
@@ -39852,10 +39852,10 @@ var _superagent2 = _interopRequireDefault(_superagent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _marked = [createGemAsync, watchCreateGem, rootSaga].map(regeneratorRuntime.mark);
+var _marked = [createGemAsync, fetchDependencies, getDataDependencies, watchCreateGem, watchFetchDependencies, watchGetDataDependencies, rootSaga].map(regeneratorRuntime.mark);
 
 function createGemAsync(action) {
-  var response, jsonResponse, name, url, info;
+  var response, jsonResponse, name, url, info, dependenciesObject;
   return regeneratorRuntime.wrap(function createGemAsync$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -39870,62 +39870,193 @@ function createGemAsync(action) {
           name = jsonResponse.name;
           url = jsonResponse.project_uri;
           info = jsonResponse.info;
-
-
-          console.log(info);
+          dependenciesObject = jsonResponse.dependencies;
           _context.next = 11;
-          return (0, _effects.put)({ type: "ADD_GEM", name: name, url: url, info: info });
+          return (0, _effects.put)({ type: "FETCH_DEPENDENCIES", dependenciesObject: dependenciesObject });
 
         case 11:
-          _context.next = 18;
-          break;
+          _context.next = 13;
+          return (0, _effects.put)({ type: "ADD_GEM", name: name, url: url, info: info });
 
         case 13:
-          _context.prev = 13;
-          _context.t0 = _context['catch'](0);
+          _context.next = 19;
+          break;
 
-          console.log('Request failed! Check this out: ', _context.t0);
-          _context.next = 18;
+        case 15:
+          _context.prev = 15;
+          _context.t0 = _context['catch'](0);
+          _context.next = 19;
           return (0, _effects.put)({ type: "TOGGLE_ERROR_ON" });
 
-        case 18:
+        case 19:
         case 'end':
           return _context.stop();
       }
     }
-  }, _marked[0], this, [[0, 13]]);
+  }, _marked[0], this, [[0, 15]]);
 }
 
-function watchCreateGem() {
-  return regeneratorRuntime.wrap(function watchCreateGem$(_context2) {
+function fetchDependencies(action) {
+  var dependenciesObject, dependencyNames, keys, i, j;
+  return regeneratorRuntime.wrap(function fetchDependencies$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
-          _context2.next = 2;
-          return (0, _reduxSaga.takeEvery)("QUERY_GEM", createGemAsync);
+          _context2.prev = 0;
+          dependenciesObject = action.dependenciesObject;
+          dependencyNames = [];
+          keys = Object.keys(dependenciesObject);
 
-        case 2:
+          for (i = 0; i < keys.length; i++) {
+            for (j = 0; j < dependenciesObject[keys[i]].length; j++) {
+              dependencyNames.push(dependenciesObject[keys[i]][j].name);
+            }
+          }
+
+          _context2.next = 7;
+          return (0, _effects.put)({ type: "GET_DATA_DEPENDENCIES", dependencyNames: dependencyNames });
+
+        case 7:
+          _context2.next = 9;
+          return (0, _effects.put)({ type: "ADD_GEM_DEPENDENCIES", dependencyNames: dependencyNames });
+
+        case 9:
+          _context2.next = 13;
+          break;
+
+        case 11:
+          _context2.prev = 11;
+          _context2.t0 = _context2['catch'](0);
+
+        case 13:
         case 'end':
           return _context2.stop();
       }
     }
-  }, _marked[1], this);
+  }, _marked[1], this, [[0, 11]]);
 }
 
-function rootSaga() {
-  return regeneratorRuntime.wrap(function rootSaga$(_context3) {
+function getDataDependencies(action) {
+  var dependencyNames, dependenciesData, i, response, jsonResponse, name, url;
+  return regeneratorRuntime.wrap(function getDataDependencies$(_context3) {
     while (1) {
       switch (_context3.prev = _context3.next) {
         case 0:
-          _context3.next = 2;
-          return [watchCreateGem()];
+          _context3.prev = 0;
+          dependencyNames = action.dependencyNames;
+          dependenciesData = {};
+          i = 0;
 
-        case 2:
+        case 4:
+          if (!(i < dependencyNames.length)) {
+            _context3.next = 15;
+            break;
+          }
+
+          _context3.next = 7;
+          return (0, _effects.call)(_superagent2.default.get, 'http://localhost:3000/api/v1/gems', { "query": dependencyNames[i] });
+
+        case 7:
+          response = _context3.sent;
+          jsonResponse = JSON.parse(response.text);
+          name = jsonResponse.name;
+          url = jsonResponse.project_uri;
+
+
+          dependenciesData[name] = {
+            url: url,
+            favorited: false
+          };
+
+        case 12:
+          i++;
+          _context3.next = 4;
+          break;
+
+        case 15:
+          _context3.next = 17;
+          return (0, _effects.put)({ type: "ADD_DEPENDENCIES_DATA", dependenciesData: dependenciesData });
+
+        case 17:
+          _context3.next = 22;
+          break;
+
+        case 19:
+          _context3.prev = 19;
+          _context3.t0 = _context3['catch'](0);
+
+          console.log('nope', _context3.t0);
+
+        case 22:
         case 'end':
           return _context3.stop();
       }
     }
-  }, _marked[2], this);
+  }, _marked[2], this, [[0, 19]]);
+}
+
+function watchCreateGem() {
+  return regeneratorRuntime.wrap(function watchCreateGem$(_context4) {
+    while (1) {
+      switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.next = 2;
+          return (0, _reduxSaga.takeEvery)("QUERY_GEM", createGemAsync);
+
+        case 2:
+        case 'end':
+          return _context4.stop();
+      }
+    }
+  }, _marked[3], this);
+}
+
+function watchFetchDependencies() {
+  return regeneratorRuntime.wrap(function watchFetchDependencies$(_context5) {
+    while (1) {
+      switch (_context5.prev = _context5.next) {
+        case 0:
+          _context5.next = 2;
+          return (0, _reduxSaga.takeEvery)("FETCH_DEPENDENCIES", fetchDependencies);
+
+        case 2:
+        case 'end':
+          return _context5.stop();
+      }
+    }
+  }, _marked[4], this);
+}
+
+function watchGetDataDependencies() {
+  return regeneratorRuntime.wrap(function watchGetDataDependencies$(_context6) {
+    while (1) {
+      switch (_context6.prev = _context6.next) {
+        case 0:
+          _context6.next = 2;
+          return (0, _reduxSaga.takeEvery)("GET_DATA_DEPENDENCIES", getDataDependencies);
+
+        case 2:
+        case 'end':
+          return _context6.stop();
+      }
+    }
+  }, _marked[5], this);
+}
+
+function rootSaga() {
+  return regeneratorRuntime.wrap(function rootSaga$(_context7) {
+    while (1) {
+      switch (_context7.prev = _context7.next) {
+        case 0:
+          _context7.next = 2;
+          return [watchCreateGem(), watchFetchDependencies(), watchGetDataDependencies()];
+
+        case 2:
+        case 'end':
+          return _context7.stop();
+      }
+    }
+  }, _marked[6], this);
 }
 
 /***/ }),
@@ -41910,6 +42041,10 @@ exports.removeFavorite = removeFavorite;
 exports.queryGem = queryGem;
 exports.addGem = addGem;
 exports.removeGem = removeGem;
+exports.toggleErrorOff = toggleErrorOff;
+exports.addGemDependencies = addGemDependencies;
+exports.addDependenciesData = addDependenciesData;
+exports.clearDependencies = clearDependencies;
 function addFavorite(name, url) {
   return {
     type: 'ADD_FAVORITE',
@@ -41947,6 +42082,32 @@ function removeGem() {
   };
 }
 
+function toggleErrorOff() {
+  return {
+    type: "TOGGLE_ERROR_OFF"
+  };
+}
+
+function addGemDependencies(dependencyNames) {
+  return {
+    type: "ADD_GEM_DEPENDENCIES",
+    dependencyNames: dependencyNames
+  };
+}
+
+function addDependenciesData(dependenciesData) {
+  return {
+    type: "ADD_DEPENDENCIES_DATA",
+    dependenciesData: dependenciesData
+  };
+}
+
+function clearDependencies() {
+  return {
+    type: "CLEAR_DEPENDENCIES"
+  };
+}
+
 /***/ }),
 /* 603 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -41974,12 +42135,17 @@ var _error = __webpack_require__(617);
 
 var _error2 = _interopRequireDefault(_error);
 
+var _dependencies = __webpack_require__(622);
+
+var _dependencies2 = _interopRequireDefault(_dependencies);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var rootReducer = (0, _redux.combineReducers)({
   favorites: _favorites2.default,
   gem: _gem2.default,
   error: _error2.default,
+  dependencies: _dependencies2.default,
   routing: _reactRouterRedux.routerReducer
 });
 
@@ -42090,6 +42256,8 @@ var App = _wrapComponent('App')(function (_Component) {
     key: 'submitHandler',
     value: function submitHandler(e) {
       e.preventDefault();
+      this.props.clearDependencies();
+      this.props.removeGem();
       var query = this.refs.query.value;
       this.props.queryGem(query);
     }
@@ -42111,7 +42279,7 @@ var App = _wrapComponent('App')(function (_Component) {
             'Oh no! Looks like that gem can\'t be found.'
           )
         );
-      } else if (this.props.gem.info != '') {
+      } else if (this.props.dependencies != '') {
         return _react3.default.createElement(_searchDetailsItem2.default, this.props);
       }
     }
@@ -45360,7 +45528,7 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
   _createClass(Favorites, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.props.removeGem();
+      this.props.toggleErrorOff();
     }
   }, {
     key: 'render',
@@ -45372,10 +45540,13 @@ var Favorites = _wrapComponent('Favorites')(function (_Component) {
           'li',
           { key: index },
           _react3.default.createElement(_gemName2.default, {
+            favorites: _this2.props.favorites,
             removeFavorite: _this2.props.removeFavorite,
+            dependenciesData: _this2.props.dependencies,
             gem: gem,
             gemStyle: 'favorites__gem-name',
             starStyle: 'favorites__star',
+            favoriteStyle: 'favorites__star',
             i: index
           })
         );
@@ -45422,19 +45593,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-function gemDependencies() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var action = arguments[1];
-
-  switch (action.type) {
-    case "ADD_DEPENDENCIES":
-      return [];
-
-    default:
-      return state;
-  }
-}
-
 function gem() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments[1];
@@ -45460,6 +45618,11 @@ function gem() {
         name: action.name
       };
 
+    case "ADD_GEM_DEPENDENCIES":
+      return _extends({}, state, {
+        dependenciesList: action.dependencyNames
+      });
+
     default:
       return state;
   }
@@ -45477,23 +45640,16 @@ exports.default = gem;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 function error() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var action = arguments[1];
 
   switch (action.type) {
     case "TOGGLE_ERROR_ON":
-      return _extends({}, state, {
-        error: true
-      });
+      return true;
 
     case "TOGGLE_ERROR_OFF":
-      return _extends({}, state, {
-        error: false
-      });
+      return false;
 
     default:
       return state;
@@ -45572,15 +45728,37 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
   _createClass(SearchDetailsItem, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var gem = this.props.gem;
 
+
+      var renderDependencies = gem.dependenciesList.map(function (dependency, index) {
+        var dependencyName = { name: dependency };
+
+        return _react3.default.createElement(
+          'li',
+          { key: index },
+          _react3.default.createElement(_gemName2.default, {
+            favorites: _this2.props.favorites,
+            dependenciesData: _this2.props.dependencies,
+            addFavorite: _this2.props.addFavorite,
+            removeFavorite: _this2.props.removeFavorite,
+            gem: dependencyName,
+            gemStyle: 'dependency__gem-name',
+            starStyle: 'dependency__star',
+            favoriteStyle: 'dependency__star--favorited'
+          })
+        );
+      });
 
       return _react3.default.createElement(
         'div',
         { className: 'search__details' },
         _react3.default.createElement(_gemName2.default, _extends({}, this.props, {
           gemStyle: 'details__name',
-          starStyle: 'details__star'
+          starStyle: 'details__star',
+          favoriteStyle: 'details__star--favorited'
         })),
         _react3.default.createElement(
           'div',
@@ -45604,7 +45782,11 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
             { className: 'details__title--color' },
             'DEPENDENCIES'
           ),
-          _react3.default.createElement('ul', { className: 'dependencies__list' })
+          _react3.default.createElement(
+            'ul',
+            { className: 'dependencies__list' },
+            renderDependencies
+          )
         )
       );
     }
@@ -45648,14 +45830,14 @@ function mapStateToProps(state) {
   var gem = state.gem,
       favorites = state.favorites,
       error = state.error,
-      searched = state.searched;
+      dependencies = state.dependencies;
 
 
   return {
     gem: gem,
     favorites: favorites,
     error: error,
-    searched: searched
+    dependencies: dependencies
   };
 }
 
@@ -45697,13 +45879,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function mapStateToProps(state) {
   var gem = state.gem,
       favorites = state.favorites,
-      error = state.error;
+      error = state.error,
+      dependencies = state.dependencies;
 
 
   return {
     gem: gem,
     favorites: favorites,
-    error: error
+    error: error,
+    dependencies: dependencies
   };
 }
 
@@ -45750,12 +45934,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var _components = {
   GemName: {
-    displayName: 'GemName'
+    displayName: "GemName"
   }
 };
 
 var _reactTransformCatchErrors2 = (0, _reactTransformCatchErrors4.default)({
-  filename: '/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx',
+  filename: "/Users/retraido/sandbox/gtDevTest/client/components/gemName.jsx",
   components: _components,
   locals: [],
   imports: [_react3.default, _redboxReact3.default]
@@ -45767,7 +45951,7 @@ function _wrapComponent(id) {
   };
 }
 
-var GemName = _wrapComponent('GemName')(function (_Component) {
+var GemName = _wrapComponent("GemName")(function (_Component) {
   _inherits(GemName, _Component);
 
   function GemName() {
@@ -45777,39 +45961,59 @@ var GemName = _wrapComponent('GemName')(function (_Component) {
   }
 
   _createClass(GemName, [{
-    key: 'clickHandler',
-    value: function clickHandler() {
-      if (!this.props.gem.favorited) {
-        console.log('favorited');
-        this.props.addFavorite(this.props.gem.name, this.props.gem.url);
-      } else {
-        console.log('nope');
-        this.props.removeFavorite(this.props.i);
+    key: "checkFavorited",
+    value: function checkFavorited() {
+      if (this.props.favorites) {
+        for (var i = 0; i < this.props.favorites.length; i++) {
+          if (this.props.gem.name == this.props.favorites[i].name) {
+            return true;
+          }
+        }
+        return false;
       }
     }
   }, {
-    key: 'render',
+    key: "checkStyle",
+    value: function checkStyle() {
+      return this.checkFavorited() ? this.props.favoriteStyle : this.props.starStyle;
+    }
+  }, {
+    key: "clickHandler",
+    value: function clickHandler() {
+      var _this2 = this;
+
+      if (!this.checkFavorited()) {
+        this.props.addFavorite(this.props.gem.name, this.props.gem.url);
+      } else {
+        var i = this.props.favorites.findIndex(function (favorite) {
+          return favorite.name == _this2.props.gem.name;
+        });
+        this.props.removeFavorite(i);
+      }
+    }
+  }, {
+    key: "render",
     value: function render() {
-      console.log(this.props.starStyle, this.props.gemStyle);
       var gem = this.props.gem;
 
+
       return _react3.default.createElement(
-        'div',
+        "div",
         { className: this.props.gemStyle },
         _react3.default.createElement(
-          'div',
+          "div",
           null,
           _react3.default.createElement(
-            'a',
-            { href: gem.url, target: '_blank' },
+            "a",
+            { href: gem.url || this.props.dependenciesData[gem.name].url, target: "_blank" },
             _react3.default.createElement(
-              'p',
+              "p",
               null,
               gem.name
             )
           )
         ),
-        _react3.default.createElement('div', { className: this.props.starStyle, onClick: this.clickHandler.bind(this) })
+        _react3.default.createElement("div", { className: this.checkStyle(), onClick: this.clickHandler.bind(this) })
       );
     }
   }]);
@@ -45818,6 +46022,34 @@ var GemName = _wrapComponent('GemName')(function (_Component) {
 }(_react2.Component));
 
 exports.default = GemName;
+
+/***/ }),
+/* 622 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function dependencies() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "ADD_DEPENDENCIES_DATA":
+      return action.dependenciesData;
+
+    case "CLEAR_DEPENDENCIES":
+      return {};
+
+    default:
+      return state;
+  }
+}
+
+exports.default = dependencies;
 
 /***/ })
 /******/ ]);
