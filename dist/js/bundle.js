@@ -46025,9 +46025,31 @@ exports.default = GemName;
 
 /***/ }),
 /* 622 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/retraido/sandbox/gtDevTest/client/reducers/dependencies.js'\n    at Error (native)");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function dependencies() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  switch (action.type) {
+    case "ADD_DEPENDENCIES_DATA":
+      return action.dependenciesData;
+
+    case "CLEAR_DEPENDENCIES":
+      return {};
+
+    default:
+      return state;
+  }
+}
+
+exports.default = dependencies;
 
 /***/ })
 /******/ ]);
