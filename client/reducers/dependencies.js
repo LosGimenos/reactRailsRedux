@@ -4,7 +4,7 @@ function dependencies(state={}, action) {
       return action.dependenciesData
 
     case "CLEAR_DEPENDENCIES":
-      return ''
+      return {}
 
     default:
       return state

@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export default class GemName extends Component {
 
   checkFavorited() {
-    if (this.props.favoritesList) {
-      for (let i = 0; i < this.props.favoritesList.length || 0; i++) {
-        if (this.props.gem.name == this.props.favoritesList[i].name) {
+    if (this.props.favorites) {
+      for (let i = 0; i < this.props.favorites.length; i++) {
+        if (this.props.gem.name == this.props.favorites[i].name) {
           return true;
         }
       }
@@ -21,7 +21,7 @@ export default class GemName extends Component {
     if (!this.checkFavorited()) {
       this.props.addFavorite(this.props.gem.name, this.props.gem.url);
     } else {
-      let i = this.props.favoritesList.findIndex((favorite) => {
+      let i = this.props.favorites.findIndex((favorite) => {
         return favorite.name == this.props.gem.name;
       })
       this.props.removeFavorite(i);

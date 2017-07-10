@@ -12,7 +12,7 @@ export default class Favorites extends Component {
       return (
         <li key={index}>
           <GemName
-            favoritesList={this.props.favorites}
+            favorites={this.props.favorites}
             removeFavorite={this.props.removeFavorite}
             dependenciesData={this.props.dependencies}
             gem={gem}

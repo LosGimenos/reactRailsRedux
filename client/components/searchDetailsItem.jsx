@@ -12,7 +12,7 @@ class SearchDetailsItem extends Component {
       return (
         <li key={index}>
           <GemName
-            favoritesList={this.props.favorites}
+            favorites={this.props.favorites}
             dependenciesData={this.props.dependencies}
             addFavorite={this.props.addFavorite}
             removeFavorite={this.props.removeFavorite}
@@ -20,7 +20,6 @@ class SearchDetailsItem extends Component {
             gemStyle={'dependency__gem-name'}
             starStyle={'dependency__star'}
             favoriteStyle={'dependency__star--favorited'}
-            i={index}
           />
         </li>
       );
