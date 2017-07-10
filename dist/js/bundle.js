@@ -18820,7 +18820,6 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
     value: function render() {
       var gem = this.props.gem;
 
-      console.log(gem);
       return _react3.default.createElement(
         "div",
         { className: this.props.gemStyle },
@@ -18829,7 +18828,7 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
           null,
           _react3.default.createElement(
             "a",
-            { href: gem.url || this.props.dependenciesData[gem.name].url, target: "_blank" },
+            { href: gem.url || this.props.dependenciesData[gem.name].url || null, target: "_blank" },
             _react3.default.createElement(
               "p",
               null,
@@ -18837,7 +18836,9 @@ var GemName = _wrapComponent("GemName")(function (_Component) {
             )
           )
         ),
-        _react3.default.createElement("div", { className: this.checkStyle(), onClick: this.clickHandler.bind(this) })
+        _react3.default.createElement("div", {
+          className: this.checkStyle(),
+          onClick: this.clickHandler.bind(this) })
       );
     }
   }]);
@@ -42305,7 +42306,6 @@ function favorites() {
 
   switch (action.type) {
     case "ADD_FAVORITE":
-      console.log(action);
       return [].concat(_toConsumableArray(state), [{
         name: action.name,
         url: action.url,
@@ -42419,7 +42419,7 @@ function dependencies() {
       return action.dependenciesData;
 
     case "CLEAR_DEPENDENCIES":
-      return {};
+      return [];
 
     default:
       return state;
@@ -42547,7 +42547,7 @@ var App = _wrapComponent('App')(function (_Component) {
     key: 'submitHandler',
     value: function submitHandler(e) {
       e.preventDefault();
-      // this.props.clearDependencies();
+      this.props.clearDependencies();
       this.props.removeGem();
       var query = this.refs.query.value;
       this.props.queryGem(query);
@@ -45766,8 +45766,9 @@ var SearchDetailsItem = _wrapComponent('SearchDetailsItem')(function (_Component
 
       var gem = this.props.gem;
 
+      var dependenciesList = gem.dependenciesList || [];
 
-      var renderDependencies = gem.dependenciesList.map(function (dependency, index) {
+      var renderDependencies = dependenciesList.map(function (dependency, index) {
         var dependencyName = { name: dependency };
 
         return _react3.default.createElement(

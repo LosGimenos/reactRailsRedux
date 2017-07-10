@@ -5,9 +5,10 @@ class SearchDetailsItem extends Component {
 
   render() {
     const { gem } = this.props;
+    const dependenciesList = gem.dependenciesList || [];
 
-    const renderDependencies = gem.dependenciesList.map((dependency, index) => {
-      const dependencyName = {name: dependency}
+    const renderDependencies = dependenciesList.map((dependency, index) => {
+      const dependencyName = {name: dependency};
 
       return (
         <li key={index}>

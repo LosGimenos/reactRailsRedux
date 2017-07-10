@@ -42,16 +42,17 @@ export default class GemName extends Component {
 
   render() {
     const { gem } = this.props;
-    console.log(gem)
     return (
       <div className={this.props.gemStyle}>
          <div>
           <a href={gem.url ||
-                   this.props.dependenciesData[gem.name].url} target="_blank">
+                   this.props.dependenciesData[gem.name].url || null} target="_blank">
             <p>{ gem.name }</p>
           </a>
         </div>
-        <div className={this.checkStyle()} onClick={this.clickHandler.bind(this)}>
+        <div
+          className={this.checkStyle()}
+          onClick={this.clickHandler.bind(this)} >
         </div>
       </div>
     );
