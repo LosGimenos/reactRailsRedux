@@ -25,14 +25,17 @@ from any catch in the AJAX request.
 
 2. There was definitely more state here than I initially realized. Next 
 time around I would add the Redux layer if no DB was present.
+//Solved
 
 3. Gems appearing in Dependencies do not possess a corresponding link.
 As such they don't populate the Favorites list with a link when saved 
 from Dependencies. This could possibly be solved with moving the ajax 
 call for details directly into the GemName component or making separate 
 calls as the list is being generated.
+//Solved
 
 3. Logic behind which color star is rendering is still flawed. 
+//Solved
 
 4. Not responsive. My first attempts with Flexbox here worked well with 
 static elements. Things got a little jazzy when the elements began to 
