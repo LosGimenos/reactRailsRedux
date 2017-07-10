@@ -5,7 +5,6 @@ class SearchDetailsItem extends Component {
 
   render() {
     const { gem } = this.props;
-    console.log('details component', gem)
 
     const renderDependencies = gem.dependenciesList.map((dependency, index) => {
       const dependencyName = {name: dependency}
@@ -13,11 +12,13 @@ class SearchDetailsItem extends Component {
       return (
         <li key={index}>
           <GemName
+            dependenciesData={this.props.dependencies}
             addFavorite={this.props.addFavorite}
             removeFavorite={this.props.removeFavorite}
             gem={dependencyName}
             gemStyle={'dependency__gem-name'}
             starStyle={'dependency__star'}
+            favoriteStyle={'dependency__star--favorited'}
             i={index}
           />
         </li>

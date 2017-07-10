@@ -5,13 +5,13 @@ import * as actionCreators from '../../actions/actionCreators';
 import App from '../app.jsx';
 
 function mapStateToProps(state) {
-  const { gem, favorites, error, searched } = state;
+  const { gem, favorites, error, dependencies } = state;
 
   return {
     gem,
     favorites,
     error,
-    searched
+    dependencies
   };
 }
 

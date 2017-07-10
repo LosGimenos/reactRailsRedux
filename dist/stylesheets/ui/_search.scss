@@ -103,7 +103,8 @@
   }
 }
 
-.details__star {
+.details__star,
+.details__star--favorited {
   position: absolute;
   background: url($details-star-gray);
   background-repeat: no-repeat;
@@ -115,14 +116,7 @@
 }
 
 .details__star--favorited {
-  position: absolute;
   background: url($details-star-blue);
-  background-repeat: no-repeat;
-  top: 35%;
-  right: -15%;
-  width: 40%;
-  height: 15px;
-  cursor: pointer;
 }
 
 .details__title--color {

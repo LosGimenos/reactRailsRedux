@@ -41,9 +41,22 @@ export function toggleErrorOff() {
   }
 }
 
-export function fetchDependencies(dependencies) {
+export function addGemDependencies(dependencyNames) {
   return {
-    type: "FETCH_DEPENDENCIES",
-    dependencies
+    type: "ADD_GEM_DEPENDENCIES",
+    dependencyNames
+  }
+}
+
+export function addDependenciesData(dependenciesData) {
+  return {
+    type: "ADD_DEPENDENCIES_DATA",
+    dependenciesData
+  }
+}
+
+export function clearDependencies() {
+  return {
+    type: "CLEAR_DEPENDENCIES"
   }
 }

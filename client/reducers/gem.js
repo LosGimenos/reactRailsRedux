@@ -23,7 +23,6 @@ function gem(state={}, action) {
       }
 
     case "ADD_GEM_DEPENDENCIES":
-    console.log('reducer', state, action.dependencyNames)
       return {
         ...state,
         dependenciesList: action.dependencyNames

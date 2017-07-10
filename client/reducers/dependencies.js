@@ -1,7 +1,10 @@
-function dependencies(state=[], action) {
+function dependencies(state={}, action) {
   switch(action.type) {
-    case "FETCH_DEPENDENCIES":
-      return action.dependencies
+    case "ADD_DEPENDENCIES_DATA":
+      return action.dependenciesData
+
+    case "CLEAR_DEPENDENCIES":
+      return ''
 
     default:
       return state

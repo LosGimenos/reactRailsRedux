@@ -6,6 +6,8 @@ export default class App extends Component {
 
   submitHandler(e) {
     e.preventDefault();
+    this.props.clearDependencies();
+    this.props.removeGem();
     const query = this.refs.query.value;
     this.props.queryGem(query);
   }
@@ -21,7 +23,7 @@ export default class App extends Component {
           <p>Oh no! Looks like that gem can't be found.</p>
         </div>
       );
-    } else if (this.props.gem.info) {
+    } else if (this.props.dependencies != '') {
         return (
           <SearchDetailsItem
             {...this.props}

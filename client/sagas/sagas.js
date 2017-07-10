@@ -13,9 +13,9 @@ export function* createGemAsync(action) {
     const name = jsonResponse.name;
     const url = jsonResponse.project_uri;
     const info = jsonResponse.info;
-    const dependencies = jsonResponse.dependencies;
+    const dependenciesObject = jsonResponse.dependencies;
 
-    yield put({type: "FETCH_DEPENDENCIES", dependencies})
+    yield put({type: "FETCH_DEPENDENCIES", dependenciesObject})
     yield put({type: "ADD_GEM", name, url, info})
 
   } catch(e) {
@@ -25,7 +25,7 @@ export function* createGemAsync(action) {
 
 export function* fetchDependencies(action) {
   try {
-    const dependenciesObject = action.dependencies;
+    const { dependenciesObject } = action;
     const dependencyNames = [];
     const keys = Object.keys(dependenciesObject);
     for (let i = 0; i < keys.length; i++) {
@@ -34,10 +34,39 @@ export function* fetchDependencies(action) {
       }
     }
 
-    yield put({type: "ADD_GEM_DEPENDENCIES", dependencyNames})
+    yield put({type: "GET_DATA_DEPENDENCIES", dependencyNames});
+    yield put({type: "ADD_GEM_DEPENDENCIES", dependencyNames});
   } catch(e) {
 
   }
+}
+
+export function* getDataDependencies(action) {
+  try {
+    const { dependencyNames } = action;
+    const dependenciesData = {};
+
+    for (let i = 0; i < dependencyNames.length; i++) {
+      const response = yield call(
+                             request.get,
+                             'http://localhost:3000/api/v1/gems',
+                             {"query": dependencyNames[i]} );
+
+      const jsonResponse = JSON.parse(response.text);
+      const name = jsonResponse.name;
+      const url = jsonResponse.project_uri;
+
+      dependenciesData[name] = {
+        url,
+        favorited: false
+      }
+    }
+
+    yield put({type: "ADD_DEPENDENCIES_DATA", dependenciesData});
+  } catch(e) {
+      console.log('nope', e);
+  }
+
 }
 
 export function* watchCreateGem() {
@@ -45,12 +74,17 @@ export function* watchCreateGem() {
 }
 
 export function* watchFetchDependencies() {
-  yield takeEvery("FETCH_DEPENDENCIES", fetchDependencies)
+  yield takeEvery("FETCH_DEPENDENCIES", fetchDependencies);
+}
+
+export function* watchGetDataDependencies() {
+  yield takeEvery("GET_DATA_DEPENDENCIES", getDataDependencies);
 }
 
 export default function* rootSaga() {
   yield [
     watchCreateGem(),
-    watchFetchDependencies()
+    watchFetchDependencies(),
+    watchGetDataDependencies()
   ]
 }
