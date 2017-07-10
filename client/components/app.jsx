@@ -6,7 +6,7 @@ export default class App extends Component {
 
   submitHandler(e) {
     e.preventDefault();
-    this.props.clearDependencies();
+    // this.props.clearDependencies();
     this.props.removeGem();
     const query = this.refs.query.value;
     this.props.queryGem(query);

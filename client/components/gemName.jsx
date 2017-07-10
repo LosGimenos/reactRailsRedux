@@ -17,9 +17,21 @@ export default class GemName extends Component {
     return (this.checkFavorited()) ? this.props.favoriteStyle : this.props.starStyle;
   }
 
+  findFavoritesData() {
+    this.props.favorites.forEach((favorite) => {
+      if (this.props.gem.name == favorite.name) {
+        return favorite.url;
+      }
+    })
+  }
+
   clickHandler() {
     if (!this.checkFavorited()) {
-      this.props.addFavorite(this.props.gem.name, this.props.gem.url);
+      this.props.addFavorite(this.props.gem.name,
+                             this.props.gem.url ||
+                             this.props
+                              .dependenciesData[this.props.gem.name]
+                              .url);
     } else {
       let i = this.props.favorites.findIndex((favorite) => {
         return favorite.name == this.props.gem.name;
@@ -30,11 +42,12 @@ export default class GemName extends Component {
 
   render() {
     const { gem } = this.props;
-
+    console.log(gem)
     return (
       <div className={this.props.gemStyle}>
          <div>
-          <a href={gem.url || this.props.dependenciesData[gem.name].url} target="_blank">
+          <a href={gem.url ||
+                   this.props.dependenciesData[gem.name].url} target="_blank">
             <p>{ gem.name }</p>
           </a>
         </div>
